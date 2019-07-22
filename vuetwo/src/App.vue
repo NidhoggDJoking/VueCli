@@ -1,13 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/info">Info</router-link>
+      <router-link to="/info">Info</router-link> -->
+      <a @click="goto('/')">Home</a> |
+      <a @click="goto('/about')">About</a> |
+      <a @click="goto('/info')">Info</a> |
+      <a @click="goto('/demo')">Demo</a> 
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goto(path){
+      
+      this.$router.replace(path);
+
+      console.log(this.$route.path)
+    }
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -28,3 +45,4 @@
   }
 }
 </style>
+
