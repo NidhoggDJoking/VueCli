@@ -15,10 +15,10 @@
 
 <script>
 
-    import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-    import 'swiper/dist/css/swiper.min.css'; 
+  import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+  import 'swiper/dist/css/swiper.min.css'; 
   export default{
-    props:['banner'],    //首页传过来的数据
+    props:['banner'],
     mounted(){
       var mySwiper = new Swiper('.swiper1',{   
                 pagination: '.swiper-pagination',
