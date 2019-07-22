@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import store from '@/store'
+import store from '@/store/test'
 export default {
   name:'about',
   store,
