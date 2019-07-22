@@ -4,7 +4,7 @@
         <div class="swiper-slide" v-for="(item,index) in banner" :key="index">
           <a :href="item.url">
             <div class="swiper-img flex3">
-              <img :src="item.image" width="100%"   alt="banner" style="display:block;">
+              <img :src='item.image' width="100%"  style="display:block;">
             </div>
           </a>
         </div>
