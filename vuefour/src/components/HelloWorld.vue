@@ -18,11 +18,14 @@
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
   import 'swiper/dist/css/swiper.min.css'; 
   export default{
-    props:['banner'],
+    // props:['banner'],
+   props: {
+    banner: Array,
+  },
     mounted(){
       var mySwiper = new Swiper('.swiper1',{   
                 pagination: '.swiper-pagination',
-                autoplay: 3000,
+                autoplay:true,
                 paginationClickable: true,
                 centeredSlides: true,
                 autoplayDisableOnInteraction: false,
