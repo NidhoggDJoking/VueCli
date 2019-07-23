@@ -4,30 +4,29 @@
       <ul>
         <li>
           <a @click="goto('/')">
-          <i class="iconfont iconicon-test"></i>
-            <span>home</span>
+          <i class="iconfont iconxiaoxi"></i>
+            <span>Home</span>
           </a>
         </li>
         <li>
           <a @click="goto('/about')">
-          <i class="iconfont iconxiaoxi"></i>
-            <span>about</span>
+          <i class="iconfont iconcart"></i>
+            <span>About</span>
           </a>
         </li>
         <li>
-          <a>
+          <a @click="goto('/info')">
             <i class="iconfont iconaixin"></i>
-            <span>info</span>
+            <span>Info</span>
           </a>
         </li>
         <li>
-          <a>
+          <a @click="goto('/my')">
           <i class="iconfont iconaccount"></i>
-            <span>myde</span>
+            <span>My</span>
           </a>
         </li>
       </ul>
-     
     </div>
     <router-view/>
   </div>
@@ -36,15 +35,15 @@
 <script>
 export default {
   methods: {
-    goto(path){
+    goto(path) {
       this.$router.replace(path);
     }
   },
-}
+};
 </script>
 
 <style scoped>
-@import url('//at.alicdn.com/t/font_1308522_9t9hj85kw8g.css');
+@import url('//at.alicdn.com/t/font_1308522_39jwduz4sds.css');
   *{
     margin: 0px;
     padding: 0px;
@@ -55,7 +54,7 @@ export default {
     width: 100%;
     bottom: 0;
     background-color: #fff;
-    box-shadow: 1px -6px 5px 0px #dedede;
+    box-shadow: -1px -5px 6px 0px #f1f1f1;
     height: 2.5rem;
     display: flex;
     justify-content:center;
@@ -82,6 +81,7 @@ export default {
   .iconfont{
      font-size: 21px;
      display: block;
+     margin-top: 2px
   }
   img{
     width: 20px;
