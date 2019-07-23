@@ -3,8 +3,6 @@
         <div class="icon" @click="back()"><i class="iconfont iconfanhui1"></i></div>
         <div class="tit">{{tit}}</div>
         <div class="icon"><i class="iconfont icondiandian"></i></div>
-        
-        
     </div>
 </template>
 <script>
