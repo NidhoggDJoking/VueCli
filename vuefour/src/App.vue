@@ -4,25 +4,25 @@
       <ul>
         <li>
           <a @click="goto('/')">
-          <i class="iconfont iconxiaoxi"></i>
+          <i class="iconfont iconxiaoxi r" :class="'/' === $route.path ? 'active' : ''"></i>
             <span>Home</span>
           </a>
         </li>
         <li>
           <a @click="goto('/about')">
-          <i class="iconfont iconcart"></i>
+          <i class="iconfont iconcart g" :class="'/about' === $route.path ? 'active' : ''"></i>
             <span>About</span>
           </a>
         </li>
         <li>
           <a @click="goto('/info')">
-            <i class="iconfont iconaixin"></i>
+            <i class="iconfont iconaixin p" :class="'/info' === $route.path ? 'active' : ''"></i>
             <span>Info</span>
           </a>
         </li>
         <li>
           <a @click="goto('/my')">
-          <i class="iconfont iconaccount"></i>
+          <i class="iconfont iconaccount y" :class="'/my' === $route.path ? 'active' : ''"></i>
             <span>My</span>
           </a>
         </li>
@@ -43,12 +43,28 @@ export default {
 </script>
 
 <style scoped>
-@import url('//at.alicdn.com/t/font_1308522_39jwduz4sds.css');
+@import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
   *{
     margin: 0px;
     padding: 0px;
     border: 0px;
   }
+  .active.g{
+    color: #00d4cc;
+  }
+
+  .active.p{
+    color: #db15dc;
+  }
+
+  .active.y{
+    color: #e2de2c;
+  }
+
+  .active.r{
+    color: #d40000;
+  }
+
   .foot{
     position: fixed;
     width: 100%;
