@@ -2,26 +2,29 @@
     <div class="top">
         <div class="info">
             <div class="user-avatar">
-                <img src="https://profile.csdnimg.cn/C/5/3/1_chitianren">
+                <img :src="src">
             </div>
-            <div class="user-name"><span>Name</span></div>
+            <div class="user-name"><span>{{name}}</span></div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-
+    props:{
+        name:String,
+        src:String,
+    }
 }
 </script>
 
 <style scoped>
 .top{ 
-    -webkit-animation:changeBg 20s infinite; 
+    /* -webkit-animation:changeBg 20s infinite; 
     -moz-animation:changeBg 20s infinite; 
-    animation:changeBg 20s infinite;
+    animation:changeBg 20s infinite; */
     background-color:#ED5564;
-    background-image: url(../image/BackgroundWall/1.gif);
+    background-image: url(../image/BackgroundWall/2.gif);
     background-size: cover;
     text-align: center;
     width: 100%;
@@ -42,8 +45,9 @@ export default {
     background-color: #FFF;
     width: 5rem;
     height: 5rem;
-    margin: 0 auto;
+    margin: 0 auto; 
     border-radius: 100%;
+    box-shadow: 0px 0px 9px 1px #545454;
 }
 .user-avatar img {
     width: 100%;
