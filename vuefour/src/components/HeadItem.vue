@@ -28,6 +28,7 @@ export default {
         box-shadow: 0px 0px 5px 1px #d4d4d4;
         display: flex;
         justify-content: space-between;
+        margin-bottom:0px;
     }
     .icon{
         line-height: 2.5rem;
