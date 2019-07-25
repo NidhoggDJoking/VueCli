@@ -16,12 +16,12 @@ export default {
   data(){
     return{
         banner:[
-          {url:'http://baidu.com',image:require("../image/001.jpg")},
-          {url:'https://www.jianshu.com',image:require("../image/002.jpg")},
-          {url:'https://juejin.im/timeline',image:require("../image/003.jpg")},
-          {url:'https://www.csdn.net',image:require("../image/004.jpg")},
-          {url:'https://www.w3cschool.cn',image:require("../image/005.jpg")},
-          {url:'https://www.bilibili.com/',image:require("../image/006.jpg")}
+          {url:'http://baidu.com',image:require("../image/Swiper/001.jpg")},
+          {url:'https://www.jianshu.com',image:require("../image/Swiper/002.jpg")},
+          {url:'https://juejin.im/timeline',image:require("../image/Swiper/003.jpg")},
+          {url:'https://www.csdn.net',image:require("../image/Swiper/004.jpg")},
+          {url:'https://www.w3cschool.cn',image:require("../image/Swiper/005.jpg")},
+          {url:'https://www.bilibili.com/',image:require("../image/Swiper/006.jpg")}
         ] 
     }
 }

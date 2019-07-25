@@ -21,7 +21,7 @@ export default {
     -moz-animation:changeBg 20s infinite; 
     animation:changeBg 20s infinite;
     background-color:#ED5564;
-    background-image: url(../image/yu.png);
+    background-image: url(../image/BackgroundWall/1.gif);
     background-size: cover;
     text-align: center;
     width: 100%;
