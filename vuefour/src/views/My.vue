@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <Item tit="我的VueCli"></Item>
+    <Item tit="个人中心"></Item>
     <BackgroundWall name="Joking" src="https://profile.csdnimg.cn/2/B/1/1_qq_38062409"></BackgroundWall>
   </div>
 </template>

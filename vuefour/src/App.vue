@@ -3,27 +3,27 @@
     <div class="foot">
       <ul>
         <li>
-          <a @click="goto('/')">
-          <i class="iconfont iconxiaoxi r" :class="'/' === $route.path ? 'active' : ''"></i>
-            <span>Home</span>
+          <a @click="goto('/')" :class="'/' === $route.path ? 'active' : ''">
+          <i class="iconfont iconxiaoxi r"></i>
+            <span class="r">首页</span>
           </a>
         </li>
         <li>
-          <a @click="goto('/about')">
-          <i class="iconfont iconcart g" :class="'/about' === $route.path ? 'active' : ''"></i>
-            <span>About</span>
+          <a @click="goto('/about')" :class="'/about' === $route.path ? 'active' : ''">
+          <i class="iconfont iconcart g"></i>
+            <span class="g">购物</span>
           </a>
         </li>
         <li>
-          <a @click="goto('/info')">
-            <i class="iconfont iconaixin p" :class="'/info' === $route.path ? 'active' : ''"></i>
-            <span>Info</span>
+          <a @click="goto('/info')" :class="'/info' === $route.path ? 'active' : ''">
+            <i class="iconfont iconaixin p"></i>
+            <span class="p">信息</span>
           </a>
         </li>
         <li>
-          <a @click="goto('/my')">
-          <i class="iconfont iconaccount y" :class="'/my' === $route.path ? 'active' : ''"></i>
-            <span>My</span>
+          <a @click="goto('/my')" :class="'/my' === $route.path ? 'active' : ''">
+          <i class="iconfont iconaccount y"></i>
+            <span class="y">个人</span>
           </a>
         </li>
       </ul>
@@ -49,19 +49,19 @@ export default {
     padding: 0px;
     border: 0px;
   }
-  .active.g{
+  .active>.g{
     color: #00d4cc;
   }
 
-  .active.p{
+  .active>.p{
     color: #db15dc;
   }
 
-  .active.y{
-    color: #e2de2c;
+  .active>.y{
+    color: #e6ac23;
   }
 
-  .active.r{
+  .active>.r{
     color: #d40000;
   }
 
