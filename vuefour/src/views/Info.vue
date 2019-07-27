@@ -1,14 +1,17 @@
 <template>
   <div class="about">
+    <Map></Map>
     <MItem :member="member"></MItem>
   </div>
 </template>
 <script>
 import MItem from '@/components/MemberItem.vue';
+import Map from '@/components/BaiduMap.vue';
 export default {
   name: 'info',
   components: {
      MItem,
+     Map,
   },
   data() {
     return {
