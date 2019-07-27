@@ -38,4 +38,7 @@ export default {
         line-height: 2.5rem;
         color: 16px;
     }
+    .icondiandian{
+        font-size: 18px;
+    }
 </style>

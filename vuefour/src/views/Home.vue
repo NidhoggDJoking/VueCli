@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Swiper msg="Welcome to Your Vue.js App" :banner="banner"/>
+    <Swiper :banner="banner"/>
     <NavItem></NavItem>
   </div>
 </template>
@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import Swiper from '@/components/Swiper.vue';
-import NavItem from '@/components/NavItem.vue'
+import NavItem from '@/components/NavItem.vue';
 export default {
   name: 'home',
   components: {
