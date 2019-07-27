@@ -54,11 +54,15 @@ export default {
     height: 100%;
     border-radius: 100%;
 }
+.user-avatar:active{
+    box-shadow: 0px 0px 12px 5px #7d7d7d;
+}
 .user-name span{
     color: #FFF;
     font-weight:600;
     font-size: 1em;
 }
+
 @keyframes changeBg{
     0%{background-color:#ED5564;}
     10%{background-color:#FB6E52;}

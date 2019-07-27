@@ -1,6 +1,6 @@
 <template>
     <div>
-            {{data}}
+        {{data}}
     </div>
 </template>
 
@@ -12,13 +12,14 @@ export default {
             data:''
         }
     },
+    //成功!
     created() {
-        var url='https://api.douban.com/v2/book/1220562';
+        var url='https://free-api.heweather.net/s6/weather/now?location=beijing&key=eaee87e2510b4e9ba269de0b1e392e79';
         Axios.get(url).then(res =>{
+            this.data = res.data.HeWeather6[0]
             console.log(res);
-            this.data = res
         }).catch(error =>{
-            console.log(error.messgae)
+            console.log(res);
         })
     },
 }
