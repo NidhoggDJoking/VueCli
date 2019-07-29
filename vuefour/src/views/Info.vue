@@ -7,6 +7,7 @@
 <script>
 import MItem from '@/components/MemberItem.vue';
 import Map from '@/components/BaiduMap.vue';
+import Js from '@/js/base.js';
 export default {
   name: 'info',
   components: {
@@ -21,6 +22,10 @@ export default {
              ]
     }
   },
+  created(){
+    Js('局部导入');
+    this.Js('全局导入');
+  }
 }
 </script>
 <style>
