@@ -25,11 +25,11 @@ export default {
 	   return {
 	     mapOptions: {
 	       ak: 'Z7YUjqYw69iFb7wFNc4LAbHSvp4e9a1U',
-	       center: '长沙',
+	       center: '北京',
 		   scrollWheelZoom: true,
-		   zoom:15,
+		   zoom:13,
 	     },
-	    //  keyword: ''
+	     keyword: ''
 	   }
 	},
 	methods: {
@@ -40,10 +40,10 @@ export default {
  
 <style>
 .bm-view {
-  width: 100%;
-  height: 300px;
+  	width: 100%;
+	height: 300px;
 }
 bm-local-search{
-    border: 5px solid red;
+	border: 5px solid red;
 }
 </style>

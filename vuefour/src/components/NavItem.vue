@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
+@import url('http://at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
 .nav{
     width: 100%;
     height: 5.7rem;

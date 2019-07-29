@@ -16,9 +16,9 @@ export default {
   },
   data() {
     return {
-      member:[{icon:"iconViewGallery",text:"滚犊子",path:""},
-              {icon:"iconclock",text:"傻孩子",path:""},
-              {icon:"iconCategory",text:"大春哥",path:""}
+      member:[{icon:"iconViewGallery",text:"列表一",path:""},
+              {icon:"iconclock",text:"列表二",path:""},
+              {icon:"iconCategory",text:"列表三",path:""}
              ]
     }
   },

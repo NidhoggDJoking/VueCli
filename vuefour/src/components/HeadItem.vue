@@ -20,7 +20,7 @@ export default {
 }
 </script>
 <style scoped>
-@import url('//at.alicdn.com/t/font_1308522_mr1q0klc2dk.css');
+@import url('http://at.alicdn.com/t/font_1308522_mr1q0klc2dk.css');
     .item{
         width: 100%;
         height: 2.5rem;

@@ -43,7 +43,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
+@import url('http://at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
+/* @import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css'); */
+/* 上面的写法打完包后报错(GET file://at.alicdn.com/t/font_1308522_ghqupjiamxr.css net::ERR_FILE_NOT_FOUND) */
   *{
     margin: 0px;
     padding: 0px;
