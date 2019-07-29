@@ -2,7 +2,8 @@
     <div class="top">
         <div class="info">
             <div class="user-avatar">
-                <img :src="src">
+                <!-- <img :src="src" > -->
+                <img :src="detection(src)" >
             </div>
             <div class="user-name"><span>{{name}}</span></div>
         </div>
@@ -14,7 +15,20 @@ export default {
     props:{
         name:String,
         src:String,
-    }
+    },
+    methods: {
+        // 图片是否可用
+        detection(src){
+            var ImgObj = new Image();
+            ImgObj.src = src;
+            if(ImgObj.fileSize > 0 || (ImgObj.width > 0 && ImgObj.height > 0)) {
+                return src;
+            } else {
+                return 'https://avatars0.githubusercontent.com/u/38490462';
+            }
+            
+        }
+    },
 }
 </script>
 
