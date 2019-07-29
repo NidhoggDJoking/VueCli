@@ -1,9 +1,28 @@
 <template>
     <div class="nav">
-        <div class="item"><i class="iconfont iconaccount"></i></div>
-        <div class="item"><i class="iconfont iconaccount"></i></div>
-        <div class="item"><i class="iconfont iconaccount"></i></div>
-        <div class="item"><i class="iconfont iconaccount"></i></div>
+        <div class="card">
+            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <span>第一</span>
+        </div>
+        <div class="card">
+            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <span>第一</span>
+        </div>
+        <div class="card">
+            <div class="item">
+                <svg class="icon" aria-hidden="true">
+   <use xlink:href="#icon-iconaccount-copy"></use>
+</svg></div>
+            <span>第一</span>
+        </div>
+        <div class="card">
+            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <span>第一</span>
+        </div>
+        <div class="card">
+            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <span>第一</span>
+        </div>
     </div>
 </template>
 
@@ -17,12 +36,17 @@ export default {
 @import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
 .nav{
     width: 100%;
-    height: 4rem;
+    height: 5.7rem;
     background-color: #fff;
     box-shadow: 0px 0px 4px 0px #bfbfbf;
     display: flex;
     align-items: center;
     justify-content:space-around;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 13rem;
+    z-index: 1;
 }
 .item{
     width: 50px;
@@ -33,6 +57,16 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 6px 1px #cdcdcd;
+}
+.card{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+span{
+    color: #888;
+    font-size: 13px;
+    margin-top: 3px;
 }
 @keyframes changeBg{
     0%{background-color:#ED5564;}
