@@ -10,6 +10,8 @@
 </template>
  
 <script>
+// https://dafrok.github.io/vue-baidu-map/#/
+// vue-baidu-map 官网
 import {BaiduMap, BmControl, BmView, BmAutoComplete, BmLocalSearch} from 'vue-baidu-map'
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
 	     mapOptions: {
 	       ak: 'Z7YUjqYw69iFb7wFNc4LAbHSvp4e9a1U',
 	       center: '长沙',
-	       scrollWheelZoom: true
+		   scrollWheelZoom: true,
+		   zoom:15,
 	     },
 	    //  keyword: ''
 	   }
