@@ -15,3 +15,10 @@ new Vue({
   store,
   render: h => h(App),
 }).$mount('#app');
+
+// main.js
+// 页面跳转的拦截器
+router.beforeEach((to, from, next) => {
+  console.log("进过拦截器了");
+  next()
+})

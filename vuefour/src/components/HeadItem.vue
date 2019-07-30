@@ -12,9 +12,11 @@ export default {
   },
   methods: {
       back(){
+        console.log('子组件——按钮点击');
         // this.$router.back(-1);
         // this.$router.go(-1);
         // this.$router.back();
+        this.$emit('back');
     },
   },
 }

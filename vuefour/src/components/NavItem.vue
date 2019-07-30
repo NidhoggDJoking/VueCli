@@ -1,23 +1,23 @@
 <template>
     <div class="nav">
         <div class="card">
-            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <div class="item"></div>
             <span>东邪</span>
         </div>
         <div class="card">
-            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <div class="item"></div>
             <span>西毒</span>
         </div>
         <div class="card">
-            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <div class="item"></div>
             <span>中通</span>
         </div>
         <div class="card">
-            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <div class="item"></div>
             <span>南帝</span>
         </div>
         <div class="card">
-            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <div class="item"></div>
             <span>北丐</span>
         </div>
     </div>
@@ -28,7 +28,6 @@ export default {
 }
 </script>
 <style scoped>
-@import url('http://at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
 
 .nav {
     width: 100%;

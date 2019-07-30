@@ -25,6 +25,12 @@ export default new Router({
       path: '/info',
       name: 'info',
       component: () => import(/* webpackChunkName: "info" */'./views/Info.vue'),
+      meta: {
+        requireAuth: true,  
+        // 添加该字段，表示进入这个路由是需要登录的
+        keepAlive: true, 
+        //此组件需要被缓存
+      },
     },
     {
       path: '/my',
