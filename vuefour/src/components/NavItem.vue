@@ -2,53 +2,50 @@
     <div class="nav">
         <div class="card">
             <div class="item"><i class="iconfont iconaccount"></i></div>
-            <span>第一</span>
+            <span>东邪</span>
         </div>
         <div class="card">
             <div class="item"><i class="iconfont iconaccount"></i></div>
-            <span>第一</span>
-        </div>
-        <div class="card">
-            <div class="item">
-                <svg class="icon" aria-hidden="true">
-   <use xlink:href="#icon-iconaccount-copy"></use>
-</svg></div>
-            <span>第一</span>
+            <span>西毒</span>
         </div>
         <div class="card">
             <div class="item"><i class="iconfont iconaccount"></i></div>
-            <span>第一</span>
+            <span>中通</span>
         </div>
         <div class="card">
             <div class="item"><i class="iconfont iconaccount"></i></div>
-            <span>第一</span>
+            <span>南帝</span>
+        </div>
+        <div class="card">
+            <div class="item"><i class="iconfont iconaccount"></i></div>
+            <span>北丐</span>
         </div>
     </div>
 </template>
-
 <script>
 export default {
 
 }
 </script>
-
 <style scoped>
 @import url('http://at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
-.nav{
+
+.nav {
     width: 100%;
     height: 5.7rem;
     background-color: #fff;
     box-shadow: 0px 0px 4px 0px #bfbfbf;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
     top: 13rem;
     z-index: 1;
 }
-.item{
+
+.item {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -59,25 +56,57 @@ export default {
     align-items: center;
     box-shadow: 0 0 6px 1px #cdcdcd;
 }
-.card{
+
+.card {
     margin-top: 0.5rem;
     text-align: center;
 }
-span{
+
+span {
     color: #888;
     font-size: 13px;
     margin-top: 3px;
 }
-@keyframes changeBg{
-    0%{background-color:#ED5564;}
-    10%{background-color:#FB6E52;}
-    20%{background-color:#FFCE55;}
-    30%{background-color:#A0D468;}
-    40%{background-color:#48CFAE;}
-    50%{background-color:#4FC0E8;}
-    60%{background-color:#5D9CEC;}
-    70%{background-color:#AC92ED;}
-    80%{background-color:#EC87BF;}
-    90%{background-color:#ED5564;}
+
+@keyframes changeBg {
+    0% {
+        background-color: #ED5564;
+    }
+
+    10% {
+        background-color: #FB6E52;
+    }
+
+    20% {
+        background-color: #FFCE55;
+    }
+
+    30% {
+        background-color: #A0D468;
+    }
+
+    40% {
+        background-color: #48CFAE;
+    }
+
+    50% {
+        background-color: #4FC0E8;
+    }
+
+    60% {
+        background-color: #5D9CEC;
+    }
+
+    70% {
+        background-color: #AC92ED;
+    }
+
+    80% {
+        background-color: #EC87BF;
+    }
+
+    90% {
+        background-color: #ED5564;
+    }
 }
 </style>
