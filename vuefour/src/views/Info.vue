@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+
 import MItem from '@/components/MemberItem.vue';
 import Map from '@/components/BaiduMap.vue';
 import Js from '@/js/base.js';

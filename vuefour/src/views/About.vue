@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <Load></Load>
     <h2>Axios:</h2>
     <Item></Item>
     <br/>
@@ -8,6 +9,7 @@
   </div>
 </template>
 <script>
+import Load from '@/components/HeadLoading.vue';
 import Item from '@/components/GoodsItem.vue';
 import Card from '@/components/GoodsCard.vue';
 export default {
@@ -15,6 +17,7 @@ export default {
   components: {
      Item,
      Card,
+     Load,
   },
 }
 </script>
