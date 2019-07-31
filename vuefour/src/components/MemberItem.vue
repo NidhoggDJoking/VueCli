@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="item" v-for="(item,index) in member" :key="index">
+    <div class="item" v-for="(item,index) in member" :key="index" @click="click()">
         <div style="display:flex">
             <div class="icon"><i class="iconfont" :class="item.icon"></i></div>
             <span class="tit" style="margin-left:10px">{{item.text}}</span>
@@ -15,7 +15,9 @@ export default {
     member: Array,
   },
   methods: {
-
+      click() {
+          this.$emit('rou','/Other/UI');
+      }
   },
 }
 </script>

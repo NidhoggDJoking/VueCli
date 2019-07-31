@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <Map></Map>
-    <MItem :member="member"></MItem>
+    <MItem :member="member" @rou="goto"></MItem>
   </div>
 </template>
 <script>
@@ -23,7 +23,14 @@ export default {
              ]
     }
   },
+   methods: {
+    goto(path) {
+      console.log('点击成功!');
+      this.$router.replace(path);
+    }
+  },
   created(){
+    // this.$router.replace();
     Js('局部导入');
     this.Js('全局导入');
   }
