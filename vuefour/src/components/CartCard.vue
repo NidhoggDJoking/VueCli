@@ -27,18 +27,15 @@ data(){
 </script>
 
 <style type="text/css">
-
 * {
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
-
 body {
     height: 100%;
     background: #333;
 }
-
 .con-card {
     position: fixed;
     bottom: -32rem;
@@ -48,7 +45,6 @@ body {
     border-radius: 23px 23px 0px 0px;
     transition: all .4s cubic-bezier(0.71, 0, 0.16, 0.76);
 }
-
 .con-tit-icon {
     margin: 0px auto;
     width: 22px;
@@ -60,7 +56,6 @@ body {
 }
 
 .con-card-tit-head {
-    /*height: 3rem;*/
     height: 1rem;
     border-bottom: 1px solid #f3f3f3;
     padding-left: 2rem;
@@ -69,16 +64,12 @@ body {
     font-weight: 600;
     color: #4a4a4a;
 }
-
 .active {
     bottom: 0rem;
 }
-
 .active .con-tit-icon {
     width: 48px;
     height: 5px;
     background: #ecebf4;
 }
-
-
 </style>
