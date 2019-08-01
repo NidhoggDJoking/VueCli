@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" v-wechat-title="$route.meta.title">
     <Load></Load>
     <h2>Axios:</h2>
     <Item></Item>

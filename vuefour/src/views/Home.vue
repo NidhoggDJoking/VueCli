@@ -26,6 +26,11 @@ export default {
           {url:'https://www.bilibili.com/',image:require("../image/Swiper/006.jpg")}
         ] 
     }
-}
+},
+created() {
+      document.title = 'Home'
+      // Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 document.title = xxx 的方式修改
+      // 使用插件 vue-wechat-title
+    },
 };
 </script>

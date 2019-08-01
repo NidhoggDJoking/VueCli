@@ -7,7 +7,8 @@ import './css/base.css';
 import Js from '@/js/base.js';
 Vue.prototype.Js = Js;
 // vue-resource` import should occur before import of `./App.vue`
-
+Vue.use(require('vue-wechat-title'));
+// Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 document.title = xxx 的方式修改 该插件只为解决该问题而生(兼容安卓)
 Vue.use(VueResourse);
 Vue.config.productionTip = false;
 new Vue({
