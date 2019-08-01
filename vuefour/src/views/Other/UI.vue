@@ -1,13 +1,17 @@
 <template>
     <!-- <h3>路由测试</h3> -->
     <h3>{{msg}}</h3>
+    <!-- <h5>{{number}}</h5> -->
 </template>
 
 <script>
+import store from '@/store'
 export default {
+    // store,
     data() {
         return {
-            msg:'路由测试'
+            msg:'路由测试',
+            // number:store.state.count,
         }
     },
     created() {
