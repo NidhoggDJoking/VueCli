@@ -34,6 +34,7 @@
                 observer:true,
                 loop: true,
                 observeParents:true,
+                lazyLoading : true,//懒加载开启
                 
        })
      

@@ -1,5 +1,5 @@
 <template>
-  <div class="about" v-wechat-title="$route.meta.title">
+  <div class="about" v-wechat-title="$route.meta.title" img-set="@/assets/logo.png">
     <Load></Load>
     <h2>Axios:</h2>
     <Item></Item>

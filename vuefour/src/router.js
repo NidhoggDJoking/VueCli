@@ -19,6 +19,7 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+    // 因为是单页面应用在此路由设置title后其他没有设置则保持最后一个title
       meta: { title: 'About' }
     },
     {
