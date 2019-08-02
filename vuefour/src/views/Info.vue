@@ -31,21 +31,16 @@ export default {
     // 3.this.$router.go(n)
     // 相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面
    methods: {
-    goto(path) {
+    goto(path,text='') {
       console.log('点击成功!');
       console.log('路由的值' + path);
       // this.$router.replace(path);
-      
-      // this.$router.push({
-      //   path:path,
-      //   params:{text:'路由测试Plus'}
-      // })
 
       //成功传值方法
       this.$router.push({
           name: 'ui',
           params: {
-            text: 'text'
+            text: text
           }
         })
     }

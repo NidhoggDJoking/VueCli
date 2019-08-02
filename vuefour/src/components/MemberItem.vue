@@ -20,7 +20,7 @@ export default {
   methods: {
       click() {
           store.commit('calculation');
-          this.$emit('rou','/Other/UI');
+          this.$emit('rou','/Other/UI','路由传值内容');
       }
   },
 }
