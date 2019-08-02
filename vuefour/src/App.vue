@@ -3,11 +3,14 @@
     <div class="foot">
       <ul>
         <li>
+          <!-- <router-link to="/"> -->
           <a @click="goto('/')" :class="'/' === $route.path ? 'active' : ''">
           <i class="iconfont iconxiaoxi r"></i>
             <span class="r">首页</span>
           </a>
+          <!-- </router-link> -->
         </li>
+        
         <li>
           <a @click="goto('/about')" :class="'/about' === $route.path ? 'active' : ''">
           <i class="iconfont iconcart g"></i>
