@@ -4,7 +4,7 @@
             <div class="user-avatar">
                 <img :src="detection(src)">
             </div>
-            <div class="user-name"><span>{{num}}</span></div>
+            <div class="user-name"><span>{{name}}</span></div>
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@ export default {
             // imgurl:{
             //     'background-image': require("../image/BackgroundWall/2.gif")
             //     },
-            num:Math.ceil(Math.random()*4),
+            num:Math.ceil(Math.random()*4),//可用
             imgurl:require('../image/BackgroundWall/1.gif'),
             alt:'背景图不见了?'
     }
