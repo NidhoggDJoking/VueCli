@@ -34,12 +34,20 @@ export default {
     goto(path) {
       console.log('点击成功!');
       console.log('路由的值' + path);
-      this.$router.replace(path);
+      // this.$router.replace(path);
       
       // this.$router.push({
       //   path:path,
       //   params:{text:'路由测试Plus'}
       // })
+
+      //成功传值方法
+      this.$router.push({
+          name: 'ui',
+          params: {
+            text: 'text'
+          }
+        })
     }
   },
   created(){

@@ -1,8 +1,8 @@
 <template>
     <!-- <h3>路由测试</h3> -->
     <div>
-    <h3>{{msg}}</h3>
-    <h5>{{number}}</h5>
+        <h3>{{msg}}</h3>
+        <h5>{{number}}</h5>
     </div>
 </template>
 
