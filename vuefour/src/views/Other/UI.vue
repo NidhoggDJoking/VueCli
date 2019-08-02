@@ -17,8 +17,8 @@ export default {
         }
     },
     created() {
+        // PS: this.$router 传值 : this.$route 取值
         console.log(this.$route.params)
-        
         if(this.$route.params.text){
             this.msg = this.$route.params.text
         }else{
@@ -27,7 +27,5 @@ export default {
     },
 }
 </script>
-
 <style scoped>
-
 </style>
