@@ -10,14 +10,16 @@
 </div>
 </template>
 <script>
-import store from '@/store'
+import store from '@/store';
+
 export default {
+  store,
   props: {
     member: Array,
   },
   methods: {
       click() {
-        //   this.store.commit('calculation');
+          store.commit('calculation');
           this.$emit('rou','/Other/UI');
       }
   },

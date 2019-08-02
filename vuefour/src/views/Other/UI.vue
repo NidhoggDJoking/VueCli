@@ -1,21 +1,24 @@
 <template>
     <!-- <h3>路由测试</h3> -->
+    <div>
     <h3>{{msg}}</h3>
-    <!-- <h5>{{number}}</h5> -->
+    <h5>{{number}}</h5>
+    </div>
 </template>
 
 <script>
 import store from '@/store'
 export default {
-    // store,
+    store,
     data() {
         return {
             msg:'路由测试',
-            // number:store.state.count,
+            number:store.state.count,
         }
     },
     created() {
         console.log(this.$route.params)
+        
         if(this.$route.params.text){
             this.msg = this.$route.params.text
         }else{
