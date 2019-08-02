@@ -19,7 +19,9 @@ export default {
             //     },
             num:Math.ceil(Math.random()*4),//可用
             imgurl:require('../image/BackgroundWall/1.gif'),
-            alt:'背景图不见了?'
+            test:'测试数据',
+            // alt:'背景图不见了?',
+            alt:'',
     }
   },
   props:{
@@ -27,7 +29,7 @@ export default {
         src:String,
     },
        methods: {
-        // 图片是否可用
+        // 头像图片是否可用
         detection(src){
             var ImgObj = new Image();
             ImgObj.src = src;
@@ -42,6 +44,11 @@ export default {
                 return 'https://avatars0.githubusercontent.com/u/38490462?s=460';
             }
             
+        },
+    },
+    computed: {
+        altdata(){
+            return this.test ;
         }
     },
 }
