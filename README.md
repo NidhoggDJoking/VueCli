@@ -1,4 +1,4 @@
-# vuefour
+# VueCli - Demo
 
 ## Project setup
 ```
