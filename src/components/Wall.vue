@@ -1,11 +1,10 @@
 <template>
-    <div class="top">
+    <div class="top" :style="{'background-image':'url(' + imgurl + ')'}" :alt='alt'>
         <div class="info">
             <div class="user-avatar">
-                
-                <img :src="detection(src)" >
+                <img :src="detection(src)">
             </div>
-            <div class="user-name"><span>{{name}}</span></div>
+            <div class="user-name"><span>{{num}}</span></div>
         </div>
     </div>
 </template>
@@ -13,6 +12,16 @@
 <script>
 export default {
   // props:['name','src'],
+  data(){
+    return {
+            // imgurl:{
+            //     'background-image': require("../image/BackgroundWall/2.gif")
+            //     },
+            num:Math.ceil(Math.random()*4),
+            imgurl:require('../image/BackgroundWall/1.gif'),
+            alt:'背景图不见了?'
+    }
+  },
   props:{
         name:String,
         src:String,
@@ -41,7 +50,7 @@ export default {
 <style>
 .top{ 
     background-color:#ED5564;
-    background-image: url(../image/BackgroundWall/2.gif);
+    /* background-image: url(../image/BackgroundWall/2.gif); */
     background-size: cover;
     text-align: center;
     width: 100%;
