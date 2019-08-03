@@ -42,7 +42,7 @@ export default new Router({
       path: '/Other/UI',
       name: 'ui',
       // props: true,
-      props: { text: '路由Router' },
+      // props: { text: '路由Router' },
       component: () => import(/* webpackChunkName: "my" */'./views/Other/UI.vue'),
     },
   ],
