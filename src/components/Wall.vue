@@ -33,9 +33,9 @@ export default {
         detection(src){
             var ImgObj = new Image();
             ImgObj.src = src;
-            console.log(ImgObj.fileSize)
-            console.log(ImgObj.width)
-            console.log(ImgObj.height)
+            // console.log(ImgObj.fileSize)
+            // console.log(ImgObj.width)
+            // console.log(ImgObj.height)
             // if(ImgObj.fileSize > 0 || (ImgObj.width > 0 && ImgObj.height > 0)) {
             if(ImgObj.fileSize > 0 && (ImgObj.width > 0 || ImgObj.height > 0)) {
                 return src;
