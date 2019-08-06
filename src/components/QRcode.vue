@@ -78,7 +78,9 @@
 </script>
 
 <style>
-
+body{
+    background:#efefef;
+}
 .qrinput{
     width: 80%;
     height: 1.5rem;
@@ -101,7 +103,21 @@
     margin: 0px auto;
     display: block;
 }
-body{
-    background:#e0e0e0;
+button{
+	border: 0px;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(128deg, #ff0101, #ff8d00);
+    color: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    margin: 0px auto;
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
 }
+
 </style>
