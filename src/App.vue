@@ -47,13 +47,17 @@ export default {
       // 描述：同样是跳转到指定的url，但是这个方法不会向history里面添加新的记录，点击返回，会跳转到上上一个页面。上一个记录是不存在的。
       // 3.this.$router.go(n)
       // 相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面
-    }
+    },
+    // 为子组件提供方法
+    sonuse(text=''){
+      console.log(text);
+    },
   },
 };
 </script>
 
 <style scoped>
-@import url('http://at.alicdn.com/t/font_1308522_ghqupjiamxr.css');
+@import url('http://at.alicdn.com/t/font_1308522_boen6vkpqpd.css');
 /* @import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css'); */
 /* 上面的写法打完包后报错(GET file://at.alicdn.com/t/font_1308522_ghqupjiamxr.css net::ERR_FILE_NOT_FOUND) */
   *{

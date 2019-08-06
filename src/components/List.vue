@@ -42,8 +42,27 @@ export default {
 }
 </script>
 
-<style>
-    .active{
-        color: red;
-    }
+<style scoped>
+.active{
+    color: red;
+}
+li{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+button{
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #01c1f7;
+    font-weight: 500;
+    margin: 0px auto;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
 </style>

@@ -21,8 +21,8 @@ export default {
       click(path) {
           console.log(path);
           store.commit('calculation');
-          this.$emit('rou',path,'路由传值内容');
-      }
+          this.$emit('rou',path,'路由传值内容成功');
+      },
   },
 }
 </script>

@@ -7,7 +7,6 @@
         <button @click="savePic()">点击下载二维码</button>
     </div>
 </template>
-
 <script>
     // 引入qrcode(这个配置太少了)
     import QRCode from 'qrcode';
@@ -41,7 +40,6 @@
             // 绑定<img :src="imgUrl"/>和 data imgUrl:'',
 
         savePic(){
-            
             //点击下载图片功能(这里要使用Let、使用var只能使用一次下载功能)
             let myCanvas = document.getElementsByTagName('canvas')[0];
             //创建一个a标签节点
@@ -62,12 +60,11 @@
         oMeta.name = 'viewport';
         document.getElementsByTagName('head')[0].appendChild(oMeta);
     },
-      watch:{
+      watch: {
           // 通过监听获取数据
           message(val){
               // 打印获取到的数据
               console.log(val)
-              
               // 获取页面的canvas
               var msg= document.getElementById('msg')
               // 将获取到的数据（val）画到msg（canvas）上
@@ -80,12 +77,12 @@
   }
 </script>
 
-<style>
+<style scoped>
 body{
-    background:#b9b9b9;
+    background:#f1f1f1;
 }
 .qrinput{
-    width: 80%;
+    width: 70%;
     height: 1.5rem;
     margin: 0px auto;
     display: block;
@@ -94,12 +91,13 @@ body{
     padding: 10px 30px 10px 30px;
     outline:none;
     display: block;
+    margin-top: 1rem;
 }
 .qrinput:focus{
     border-color: red;
     box-shadow: 0 0 3px 3px #ffa0a0;
 }
-#msg{
+#msg{ 
    display: none;
 }
 .canvasToPng{
@@ -124,8 +122,7 @@ button{
     margin: 0px auto;
     display: block;
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 25%;
 }
-
 </style>

@@ -18,9 +18,9 @@ export default {
   data() {
     return {
       member:[
-        {icon:"iconViewGallery",text:"列表一",path:"ui"},
-        {icon:"iconclock",text:"列表二",path:"list"},
-        {icon:"iconCategory",text:"列表三",path:"qr"}
+        {icon:"iconvuejs",text:"Vuex",path:"ui"},
+        {icon:"iconCategory",text:"List",path:"list"},
+        {icon:"iconerweima",text:"Qrcode",path:"qr"}
         ]
     }
   },
@@ -43,12 +43,12 @@ export default {
             text: text
           }
         })
-    }
+    },
   },
   created(){
     // this.$router.replace();
     Js('局部导入');
-    this.Js('全局导入');
+    this.Js('全局导入')
   }
 }
 </script>
