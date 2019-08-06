@@ -29,7 +29,7 @@ export default {
         }
     },
     mounted() {
-        this.$parent.sonuse('子组件使用父组件方法');
+        this.$parent.sonUse('子组件使用父组件方法');
     }
 }
 </script>

@@ -2,7 +2,7 @@
     <div class="item">
         <div class="icon" @click="back()"><i class="iconfont iconfanhui1"></i></div>
         <div class="tit">{{tit}}</div>
-        <div class="icon"><i class="iconfont icondiandian"></i></div>
+        <div class="icon" @click="settin()"><i class="iconfont icondiandian"></i></div>
     </div>
 </template>
 <script>
@@ -12,12 +12,15 @@ export default {
   },
   methods: {
       back(){
-        console.log('子组件——按钮点击');
+        // console.log('子组件——按钮点击');
         // this.$router.back(-1);
         // this.$router.go(-1);
         // this.$router.back();
         this.$emit('back');
     },
+    settin(){
+        this.$emit('settin');
+    }
   },
 }
 </script>

@@ -45,6 +45,9 @@ export default {
             }
             
         },
+        fatherUse(text='父组件使用子组件方法'){
+            console.log(text)
+        }
     },
     computed: {
         altdata(){

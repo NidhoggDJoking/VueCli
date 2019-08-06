@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <Item tit="个人中心" @back='back'></Item>
+    <Item tit="个人中心" @back='back' @settin='settin'></Item>
     <!-- <BackgroundWall name="Joking" src="https://avatar.csdnimg.cn/2/B/1/1_qq_38062409_1548138211.jpg"></BackgroundWall> -->
-    <Wall  name="Joking" src="https://avatar.csdnimg.cn/2/B/1/1_qq_38062409_1548138211.jpg"></Wall>
+    <Wall ref="childAct" name="Joking" src="https://avatar.csdnimg.cn/2/B/1/1_qq_38062409_1548138211.jpg"></Wall>
   </div>
 </template>
 <script>
@@ -27,6 +27,9 @@ export default {
       // this.$router.go(-1);
       // this.$router.back();
       window.history.go(-1);
+    },
+    settin() {
+      this.$refs.childAct.fatherUse();
     }
   },
 }

@@ -49,7 +49,7 @@ export default {
       // 相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面
     },
     // 为子组件提供方法
-    sonuse(text=''){
+    sonUse(text=''){
       console.log(text);
     },
   },
