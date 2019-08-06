@@ -29,7 +29,11 @@ export default {
       window.history.go(-1);
     },
     settin() {
+      // 获取注册过 ref 的所有组件或元素
+      // 找到 ref='childAct' 的组件
       this.$refs.childAct.fatherUse();
+      // 除了可以调用子组件的方法还可以修改数据
+      this.$refs.childAct.alt = "背景图不见了"
     }
   },
 }

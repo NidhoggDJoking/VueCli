@@ -20,7 +20,6 @@ export default {
             num:Math.ceil(Math.random()*4),//可用
             imgurl:require('../image/BackgroundWall/1.gif'),
             test:'测试数据',
-            // alt:'背景图不见了?',
             alt:'',
     }
   },
