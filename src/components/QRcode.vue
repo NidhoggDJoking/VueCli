@@ -2,17 +2,39 @@
     <div class="hello">
         <input v-model="message" class="qrinput">
         <canvas id="msg"></canvas>
+        <div class="canvasToPng">
+            
+        </div>
     </div>
 </template>
 
 <script>
-    // 引入qrcode
-    import QRCode from 'qrcode'
+    // 引入qrcode(这个配置太少了)
+    import QRCode from 'qrcode';
+    import $ from 'jquery';
     export default{
       data(){
           return {
               message:'',
           }
+      },
+      methods: {
+        //canvas 转化成图片
+        init() {
+            console.log("init方法调用")
+            var mycanvas=document.getElementsByTagName('canvas')[0];
+            var img = this.convertCanvasToImage(mycanvas);
+            console.log(img)
+            $('.canvasToPng').html(img);
+            // $('img').css('border', '10px solid #ffffff');
+        },
+        convertCanvasToImage(canvas) {
+            console.log("convertCanvasToImage方法调用")
+            var image = new Image();
+            image.src = canvas.toDataURL("image/png");
+            return image;
+            //返回的为data:image/png;base64格式
+        }
       },
       created() {
         //用于单页vue启动的适应问题
@@ -26,25 +48,42 @@
           message(val){
               // 打印获取到的数据
               console.log(val)
+              
               // 获取页面的canvas
               var msg= document.getElementById('msg')
               // 将获取到的数据（val）画到msg（canvas）上
               QRCode.toCanvas(msg, val, function (error) {
                     console.log(error)
               })
+              this.init()
           },
       },
   }
 </script>
 
-<style scoped>
+<style>
+
 .qrinput{
-    width: 100px;
+    width: 80%;
+    height: 1.5rem;
+    margin: 0px auto;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #0ec1f3;
+}
+#msg{
+   /* opacity: 0; */
+   display: none;
+}
+.canvasToPng{
     margin: 0px auto;
     display: block;
 }
-#msg{
+.canvasToPng img{
     margin: 0px auto;
     display: block;
+}
+body{
+    background:#e0e0e0;
 }
 </style>
