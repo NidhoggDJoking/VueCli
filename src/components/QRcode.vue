@@ -16,6 +16,7 @@
       data(){
           return {
               message:'',
+              picname:'二维码'
           }
       },
       methods: {
@@ -40,16 +41,18 @@
             // 绑定<img :src="imgUrl"/>和 data imgUrl:''
 
         savePic(){
-            //点击下载图片功能
-            var myCanvas = document.getElementsByTagName('canvas')[0];
+            
+            //点击下载图片功能(这里要使用Let、使用var只能使用一次下载功能)
+            let myCanvas = document.getElementsByTagName('canvas')[0];
             //创建一个a标签节点
-            var a = document.createElement("a")
+            let a = document.createElement("a")
             //设置a标签的href属性（将canvas变成png图片）
             a.href = myCanvas.toDataURL('image/png').replace('image/png', 'image/octet-stream')
             //设置下载文件的名字
-            a.download = "二维码.png"
+            console.log(a.href);
+            a.download = this.picname + ".png"
             //点击
-            a.click()
+            a.click();
         },
       },
       created() {
@@ -88,6 +91,10 @@ body{
     display: block;
     border-radius: 3px;
     border: 1px solid #0ec1f3;
+    outline:none;
+}
+.qrinput:focus{
+    border-color: red;
 }
 #msg{
    /* opacity: 0; */
@@ -109,7 +116,7 @@ button{
     height: 50px;
     font-size: 20px;
     font-weight: 600;
-    background: linear-gradient(128deg, #ff0101, #ff8d00);
+    background: linear-gradient(128deg, #01ffd0, #ffc800);
     color: #ffffff;
     border-radius: 25px;
     outline: none;
