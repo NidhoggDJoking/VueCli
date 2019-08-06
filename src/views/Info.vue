@@ -18,9 +18,9 @@ export default {
   data() {
     return {
       member:[
-        {icon:"iconViewGallery",text:"列表一",path:""},
-        {icon:"iconclock",text:"列表二",path:""},
-        {icon:"iconCategory",text:"列表三",path:""}
+        {icon:"iconViewGallery",text:"列表一",path:"ui"},
+        {icon:"iconclock",text:"列表二",path:"list"},
+        {icon:"iconCategory",text:"列表三",path:"qr"}
         ]
     }
   },
@@ -31,14 +31,14 @@ export default {
     // 3.this.$router.go(n)
     // 相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面
    methods: {
-    goto(path,text='') {
+    goto(pathName,text='') {
       console.log('点击成功!');
-      console.log('路由的值' + path);
+      console.log('路由的值' + pathName);
       // this.$router.replace(path);
 
       //成功传值方法
       this.$router.push({
-          name: 'ui',
+          name: pathName,
           params: {
             text: text
           }

@@ -45,5 +45,15 @@ export default new Router({
       // props: { text: '路由Router' },
       component: () => import(/* webpackChunkName: "my" */'./views/Other/UI.vue'),
     },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import(/* webpackChunkName: "my" */'./components/List.vue'),
+    },
+    {
+      path: '/qr',
+      name: 'qr',
+      component: () => import(/* webpackChunkName: "my" */'./components/QRcode.vue'),
+    },
   ],
 });

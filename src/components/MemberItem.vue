@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="item" v-for="(item,index) in member" :key="index" @click="click()">
+    <div class="item" v-for="(item,index) in member" :key="index" @click="click(item.path)">
         <div style="display:flex">
             <div class="icon"><i class="iconfont" :class="item.icon"></i></div>
             <span class="tit" style="margin-left:10px">{{item.text}}</span>
@@ -18,9 +18,10 @@ export default {
     member: Array,
   },
   methods: {
-      click() {
+      click(path) {
+          console.log(path);
           store.commit('calculation');
-          this.$emit('rou','/Other/UI','路由传值内容');
+          this.$emit('rou',path,'路由传值内容');
       }
   },
 }
