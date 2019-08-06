@@ -5,6 +5,7 @@
 </template>
 
 <script>
+// 类似YouTube顶部加载条效果
 import $ from 'jquery';
 export default {
     created() {

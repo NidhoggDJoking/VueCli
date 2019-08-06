@@ -38,7 +38,7 @@
         },
             // 写法二:
             // this.imgUrl=mycanvas[0].toDataURL('image/png')
-            // 绑定<img :src="imgUrl"/>和 data imgUrl:''
+            // 绑定<img :src="imgUrl"/>和 data imgUrl:'',
 
         savePic(){
             
@@ -82,31 +82,32 @@
 
 <style>
 body{
-    background:#efefef;
+    background:#b9b9b9;
 }
 .qrinput{
     width: 80%;
     height: 1.5rem;
     margin: 0px auto;
     display: block;
-    border-radius: 3px;
-    border: 1px solid #0ec1f3;
+    border-radius: 25px;
+    border: 1px solid #00c7ff6e;
+    padding: 10px 30px 10px 30px;
     outline:none;
+    display: block;
 }
 .qrinput:focus{
     border-color: red;
+    box-shadow: 0 0 3px 3px #ffa0a0;
 }
 #msg{
-   /* opacity: 0; */
    display: none;
 }
 .canvasToPng{
     margin: 0px auto;
     display: block;
+    margin-top: 5rem;
 }
 .canvasToPng img{
-    /* widows: 180px;
-    height: 180px; */
     margin: 0px auto;
     display: block;
 }
