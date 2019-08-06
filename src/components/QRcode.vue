@@ -3,8 +3,8 @@
         <input v-model="message" class="qrinput">
         <canvas id="msg"></canvas>
         <div class="canvasToPng">
-            
         </div>
+        <button @click="savePic()">点击下载二维码</button>
     </div>
 </template>
 
@@ -24,7 +24,7 @@
             console.log("init方法调用")
             var mycanvas=document.getElementsByTagName('canvas')[0];
             var img = this.convertCanvasToImage(mycanvas);
-            console.log(img)
+            // console.log(img)
             $('.canvasToPng').html(img);
             // $('img').css('border', '10px solid #ffffff');
         },
@@ -34,7 +34,23 @@
             image.src = canvas.toDataURL("image/png");
             return image;
             //返回的为data:image/png;base64格式
-        }
+        },
+            // 写法二:
+            // this.imgUrl=mycanvas[0].toDataURL('image/png')
+            // 绑定<img :src="imgUrl"/>和 data imgUrl:''
+
+        savePic(){
+            //点击下载图片功能
+            var myCanvas = document.getElementsByTagName('canvas')[0];
+            //创建一个a标签节点
+            var a = document.createElement("a")
+            //设置a标签的href属性（将canvas变成png图片）
+            a.href = myCanvas.toDataURL('image/png').replace('image/png', 'image/octet-stream')
+            //设置下载文件的名字
+            a.download = "二维码.png"
+            //点击
+            a.click()
+        },
       },
       created() {
         //用于单页vue启动的适应问题
@@ -80,6 +96,8 @@
     display: block;
 }
 .canvasToPng img{
+    /* widows: 180px;
+    height: 180px; */
     margin: 0px auto;
     display: block;
 }
