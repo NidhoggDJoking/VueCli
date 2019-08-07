@@ -43,7 +43,9 @@ export default {
                   jquery('.selector').addClass('spring');
                   this.state = false;
                   this.toggleOptions();
-                  this.container = []
+                  this.container.length = 0
+                  // this.container = []
+                  jquery('li>input').prop("checked",false);
               }
           }
       },
@@ -90,6 +92,7 @@ export default {
 }
 .selector.spring button{
     font-size: 35px;
+    background: rgb(63, 220, 228);
 }
 .selector {
   transition: all 0.5s;
