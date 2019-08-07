@@ -14,13 +14,13 @@
         <li>
           <a @click="goto('/about')" :class="'/about' === $route.path ? 'active' : ''">
           <i class="iconfont iconcart g"></i>
-            <span class="g">购物</span>
+            <span class="g">数据</span>
           </a>
         </li>
         <li>
           <a @click="goto('/info')" :class="'/info' === $route.path ? 'active' : ''">
             <i class="iconfont iconaixin p"></i>
-            <span class="p">信息</span>
+            <span class="p">地图</span>
           </a>
         </li>
         <li>

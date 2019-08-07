@@ -20,6 +20,17 @@ new Vue({
 // main.js
 // 页面跳转的拦截器
 router.beforeEach((to, from, next) => {
-  console.log("进过拦截器了");
+  // 在需要过滤的路由添加 requireAuth: true 如:info
+  if (to.matched.some(record => record.meta.requireAuth)){
+      console.log("进过拦截器了");
+      if(!sessionStorage.getItem('Nidhogg')){
+          alert("没有发现sessionStorage跳转至首页");
+          next({
+            path: '/',
+            query: {redirect: to.fullPath} // 将跳转的路由path作为参数，登录成功后跳转到该路由
+        })
+      }
+  }
+ 
   next()
 })

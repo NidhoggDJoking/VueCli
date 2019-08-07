@@ -16,7 +16,7 @@ export default {
     return {
             // imgurl:{
             //     'background-image': require("../image/BackgroundWall/2.gif")
-            //     },
+            // },
             num:Math.ceil(Math.random()*4),//可用
             imgurl:require('../image/BackgroundWall/1.gif'),
             test:'测试数据',

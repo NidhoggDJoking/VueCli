@@ -32,5 +32,10 @@ created() {
       // Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 document.title = xxx 的方式修改
       // 使用插件 vue-wechat-title
     },
+    mounted() {
+      // 本地存储要写在mounted生命周期之后
+      sessionStorage.setItem("Nidhogg", "Joking");
+      localStorage .setItem("Egoist", "Inori");
+    }
 };
 </script>
