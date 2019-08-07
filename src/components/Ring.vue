@@ -105,7 +105,6 @@ export default {
   margin-top: -70px;
   margin-left: -70px;
 }
-
 .selector, .selector button {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
