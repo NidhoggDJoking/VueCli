@@ -17,8 +17,11 @@ new Vue({
   render: h => h(App),
 }).$mount('#app');
 
-// main.js
-// 页面跳转的拦截器
+  // main.js;
+  // 页面跳转的拦截器;
+  // to:router即将进入的路由对象;
+  // from:当前导航即将离开的路由;
+  // next:Function,进行管道中的一个钩子，如果执行完了，则导航的状态就是 confirmed （确认的）；否则为false，终止导航。
 router.beforeEach((to, from, next) => {
   // 在需要过滤的路由添加 requireAuth: true 如:info
   if (to.matched.some(record => record.meta.requireAuth)){
@@ -31,6 +34,10 @@ router.beforeEach((to, from, next) => {
         })
       }
   }
- 
   next()
+});
+
+// 跳转后执行
+router.afterEach((to, from) => {
+  
 })

@@ -37,6 +37,15 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: () => import(/* webpackChunkName: "my" */'./views/My.vue'),
+      // 进入路由之前执行的函数
+      beforeEnter: (to, from, next) => {
+        console.log("进来了")
+        next()
+      },
+      // 离开路由之前执行的函数(失败)
+      beforeLeave: (to, from, next) => {
+        console.log("离开了")
+      },
     },
     {
       path: '/Other/UI',
