@@ -66,6 +66,7 @@ export default {
     height: 10rem;
     position: relative;
     z-index:1;
+    box-shadow: 0px 1px 5px 0px #232323;
 }
 .info {
     width: 12rem;

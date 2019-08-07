@@ -1,55 +1,53 @@
 <template>
-     <div class='selector' @click="clickRing()">
+     <div class='selector spring' @click="clickRing()">
   <ul>
-    <li>
-      <input id='1' type='checkbox'>
-      <label for='1'>中文</label>
-    </li>
-    <li>
-      <input id='2' type='checkbox'>
-      <label for='2'>Option 2</label>
-    </li>
-    <li>
-      <input id='3' type='checkbox'>
-      <label for='3'>Option 3</label>
-    </li>
-    <li>
-      <input id='4' type='checkbox'>
-      <label for='4'>Option 4</label>
-    </li>
-    <li>
-      <input id='5' type='checkbox'>
-      <label for='5'>Option 5</label>
-    </li>
-    <li>
-      <input id='6' type='checkbox'>
-      <label for='6'>Option 6</label>
-    </li>
-    <li>
-      <input id='7' type='checkbox'>
-      <label for='7'>Option 7</label>
-    </li>
-    <li>
-      <input id='8' type='checkbox'>
-      <label for='8'>Option 8</label>
-    </li>
+      <li 
+        v-for="(item,index) in data"
+        :key="index">
+            <input :id='index' type='checkbox' :value="item.text" v-model="container">
+            <label :for='index'>{{item.text}}</label>
+      </li>
+
+    <!-- <li>
+        <input id='1' type='checkbox'>
+        <label for='1'>Option 1</label>
+        </li> -->
   </ul>
-  <button>Click here</button>
+  <button>Click</button>
 </div>
 </template>
 
 <script>
 import jquery from 'jquery';
 export default {
-       data(){
-          return {
-              angleStart:-360,
+    mounted(){
+        // let that = this;
+        // setTimeout(function() { that.toggleOptions('.selector'); }, 150);
+    },
+    data(){
+        return {
+            angleStart:-360,
+            data:[
+                {text:"谷玄"},{text:"印池"},
+                {text:"填盍"},{text:"郁非"},
+                {text:"密罗"},{text:"裂章"},
+                {text:"暗月"},{text:"岁正"}
+            ],
+            container:[],
+            state:false,
+        }
+      },
+      watch:{
+          container:function(){
+              if(this.container[7]){
+                  jquery('.selector').addClass('spring');
+                  this.state = false;
+                  this.toggleOptions();
+                  this.container = []
+              }
           }
       },
-    mounted(){
-        let that = this;
-        setTimeout(function() { that.toggleOptions('.selector'); }, 100);
-    },
+
     methods:{
         toggleOptions(s='.selector') {
             jquery(s).toggleClass('open');
@@ -71,27 +69,34 @@ export default {
             });
         },
         clickRing(){
-            this.toggleOptions();
+            if(this.state){
+                 this.toggleOptions();
+            }else{
+                jquery('.selector').removeClass('spring');
+                this.state = true;
+            }
         }
     }
 }
 </script>
 
-<style>
+<style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-html, body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  background: linear-gradient(#eee, #ccc);
-  overflow: hidden;
-}
 
+.selector.spring{
+    margin-top: 100px;
+    margin-left: 75px;
+    transform: scale(0.4);
+}
+.selector.spring button{
+    font-size: 35px;
+}
 .selector {
+  transition: all 0.5s;
   position: absolute;
   left: 50%;
-  top: 50%;
+  /* top: 50%; */
+  top:60%;
   width: 140px;
   height: 140px;
   margin-top: -70px;
@@ -142,7 +147,7 @@ body {
   width: 0;
   height: 100%;
   margin: 0 50%;
-  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
   transition: all 0.8s ease-in-out;
 }
 
@@ -151,7 +156,9 @@ body {
 }
 
 .selector li input + label {
-  position: absolute;
+  /* position: absolute; */
+  /* 使用fixed不用担心展开时挤压别的元素 */
+  position:fixed;
   left: 50%;
   bottom: 100%;
   width: 0;
