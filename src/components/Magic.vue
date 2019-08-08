@@ -96,7 +96,12 @@ export default {
                 cubeImageClass = targetClass;
             }
         });
+            document.querySelector("body").style.background= '#333333';
         }
+    },
+      beforeRouteLeave (to, from, next) {
+        document.querySelector("body").style.background= '#f9f9f9';
+        next()
     }
 }
 </script>
@@ -128,20 +133,12 @@ body {
     transform: scale(0.8);
     font-size: 10px;
 }
-h1 {
-	font-size: 4rem;
-}
-
-h2 {
-	font-size: 2rem;
-	margin-bottom: 2.5rem;
-}
 
 .cube-container {
 	position: relative;
-	width: 25rem;
-	height: 30rem;
-	margin: 1rem auto 5rem;
+	width: 20rem;
+    height: 21rem;
+    margin: 1rem auto 5rem;
 	perspective: 100rem;
 }
 
@@ -176,59 +173,59 @@ h2 {
 
 .image-buttons input:focus {
 	outline: none;
-	border: 0.2rem solid var(--border-color);
+	border: 0.1rem solid var(--border-color);
 }
 
 /* Transform images to create cube */
 
 .image-1 {
-	transform: translateZ(15rem);
+	transform: translateZ(11rem);
 }
 
 .image-2 {
-	transform: rotateX(-180deg) translateZ(15rem);
+	transform: rotateX(-180deg) translateZ(11rem);
 }
 
 .image-3 {
-	transform: rotateY(90deg) translateZ(15rem);
+	transform: rotateY(90deg) translateZ(11rem);
 }
 
 .image-4 {
-	transform: rotateY(-90deg) translateZ(15rem);
+	transform: rotateY(-90deg) translateZ(11rem);
 }
 
 .image-5 {
-	transform: rotateX(90deg) translateZ(15rem);
+	transform: rotateX(90deg) translateZ(11rem);
 }
 
 .image-6 {
-	transform: rotateX(-90deg) translateZ(15rem);
+	transform: rotateX(-90deg) translateZ(11rem);
 }
 
 /* Transform cube to show correct image */
 
 .cube.initial-position {
-	transform: translateZ(-15rem) translateY(-2rem) rotateX(-15deg) rotateY(18deg) rotateZ(2deg);
+	transform: translateZ(-11rem) translateY(-2rem) rotateX(-15deg) rotateY(18deg) rotateZ(2deg);
 }
 
 .cube.show-image-1 {
-	transform: translateZ(-15rem);
+	transform: translateZ(-11rem);
 }
 
 .cube.show-image-2 {
-	transform: translateZ(-15rem) rotateX(180deg);
+	transform: translateZ(-11rem) rotateX(180deg);
 }
 
 .cube.show-image-3 {
-	transform: translateZ(-15rem) rotateY(-90deg);
+	transform: translateZ(-11rem) rotateY(-90deg);
 }
 
 .cube.show-image-4 {
-	transform: translateZ(-15rem) rotateY(90deg);
+	transform: translateZ(-11rem) rotateY(90deg);
 }
 
 .cube.show-image-5 {
-	transform: translateZ(-15rem) rotateX(-90deg);
+	transform: translateZ(-11rem) rotateX(-90deg);
 }
 
 .cube.show-image-6 {

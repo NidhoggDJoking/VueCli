@@ -21,7 +21,7 @@ export default {
         {icon:"iconvuejs",text:"Vuex",path:"ui"},
         {icon:"iconCategory",text:"List",path:"list"},
         {icon:"iconerweima",text:"Qrcode",path:"qr"},
-        // {icon:"iconViewGallery",text:"Magic",path:"magic"},
+        {icon:"iconViewGallery",text:"Magic",path:"magic"},
         ]
     }
   },
