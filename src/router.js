@@ -40,7 +40,7 @@ export default new Router({
       // 进入路由之前执行的函数
       beforeEnter: (to, from, next) => {
         console.log("进来了")
-        next()
+        next();
       },
       // 离开路由之前执行的函数(失败)
       beforeLeave: (to, from, next) => {
@@ -63,6 +63,11 @@ export default new Router({
       path: '/qr',
       name: 'qr',
       component: () => import(/* webpackChunkName: "my" */'./components/QRcode.vue'),
+    },
+    {
+      path: '/magic',
+      name: 'magic',
+      component: () => import(/* webpackChunkName: "my" */'./components/Magic.vue'),
     },
   ],
 });

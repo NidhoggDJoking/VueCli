@@ -83,8 +83,6 @@ export default {
 </script>
 
 <style scoped>
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-
 .selector.spring{
     margin-top: 100px;
     margin-left: 75px;

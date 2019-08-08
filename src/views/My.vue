@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import Item from '@/components/HeadItem.vue';
+import Item from '@/components/HeadItem.vue'; 
 // import BackgroundWall from '@/components/BackgroundWall';
 import Wall from '@/components/Wall.vue';
 import Ring from '@/components/Ring.vue';

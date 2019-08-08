@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="magic">
     <div style="text-align:center;clear:both;">
     </div>
     <div class="cube-container">
@@ -12,7 +12,7 @@
             <img class="cube-face-image image-6" src="../image/Magic/c6300.jpg">
         </div>
     </div>
-    <h2>点击下面的图像旋转立方体</h2>
+    <!-- <h2>点击下面的图像旋转立方体</h2> -->
     <div class="image-buttons">
         <input v-for="(item,index) in pic" :key="index" type="image" :class="'show-image-'+(index+1)" :src='item.src'>
 
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    created(){
+    mounted(){
         window.addEventListener("DOMContentLoaded", function () {
 
         var cube = document.querySelector(".cube"),
@@ -54,7 +54,9 @@ export default {
                 cubeImageClass = targetClass;
             }
         });
+        console.log("矩阵魔方");
     });
+    this.star();
     },
     data(){
         return{
@@ -68,6 +70,33 @@ export default {
                 {src:require("../image/Magic/p6100.jpg")},
             ],
         }
+    },
+    methods:{
+        star(){
+            var cube = document.querySelector(".cube"),
+            imageButtons = document.querySelector(".image-buttons");
+        var cubeImageClass = cube.classList[1];
+
+        //Add click event listener to image buttons container
+        imageButtons.addEventListener("click", function (e) {
+
+            //Get node type and class value of clicked element
+            var targetNode = e.target.nodeName,
+                targetClass = e.target.className;
+
+            //Check if image input has been clicked and isn't the currently shown image
+            if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
+
+                console.log("Show Image: " + targetClass.charAt(11));
+
+                //Replace previous cube image class with new class
+                cube.classList.replace(cubeImageClass, targetClass);
+
+                //Update cube image class variable with new class
+                cubeImageClass = targetClass;
+            }
+        });
+        }
     }
 }
 </script>
@@ -75,27 +104,30 @@ export default {
 <style>
 :root {
 	/* Base font size */
-	font-size: 10px;
-
+	/* font-size: 10px; */
 	/* Border color variable */
 	--border-color: #e70;
 }
 
-* {
+/* * {
 	box-sizing: border-box;
 }
-
+*/
 body {
-	font-family: "Montserrat", Arial, sans-serif;
+	/* font-family: "Montserrat", Arial, sans-serif;
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: center;
 	min-height: 100vh;
 	padding: 4rem 2rem;
-	color: #fafafa;
-	background-color: #080808;
+	color: #fafafa; */
+	/* background-color: #080808; */
+    
+} 
+#magic{
+    transform: scale(0.8);
+    font-size: 10px;
 }
-
 h1 {
 	font-size: 4rem;
 }
@@ -107,9 +139,9 @@ h2 {
 
 .cube-container {
 	position: relative;
-	width: 30rem;
+	width: 25rem;
 	height: 30rem;
-	margin: 5rem auto 6rem;
+	margin: 1rem auto 5rem;
 	perspective: 100rem;
 }
 
