@@ -4,22 +4,24 @@
     </div>
     <div class="cube-container">
         <div class="cube initial-position">
-            <img class="cube-face-image image-1" src="../image/Magic/p1300.jpg">
-            <img class="cube-face-image image-2" src="../image/Magic/p2300.jpg">
-            <img class="cube-face-image image-3" src="../image/Magic/p3300.jpg">
-            <img class="cube-face-image image-4" src="../image/Magic/p4300.jpg">
-            <img class="cube-face-image image-5" src="../image/Magic/p5300.jpg">
-            <img class="cube-face-image image-6" src="../image/Magic/p6300.jpg">
+            <img class="cube-face-image image-1" src="../image/Magic/c1300.jpg">
+            <img class="cube-face-image image-2" src="../image/Magic/c2300.jpg">
+            <img class="cube-face-image image-3" src="../image/Magic/c3300.jpg">
+            <img class="cube-face-image image-4" src="../image/Magic/c4300.jpg">
+            <img class="cube-face-image image-5" src="../image/Magic/c5300.jpg">
+            <img class="cube-face-image image-6" src="../image/Magic/c6300.jpg">
         </div>
     </div>
-    <h2>Click the images below to rotate the cube</h2>
+    <h2>点击下面的图像旋转立方体</h2>
     <div class="image-buttons">
-        <input type="image" class="show-image-1" src="../image/Magic/p1300.jpg">
-        <input type="image" class="show-image-2" src="../image/Magic/p2300.jpg">
-        <input type="image" class="show-image-3" src="../image/Magic/p3300.jpg">
-        <input type="image" class="show-image-4" src="../image/Magic/p4300.jpg">
-        <input type="image" class="show-image-5" src="../image/Magic/p5300.jpg">
-        <input type="image" class="show-image-6" src="../image/Magic/p6300.jpg">
+        <input v-for="(item,index) in pic" :key="index" type="image" :class="'show-image-'+(index+1)" :src='item.src'>
+
+        <!-- <input type="image" class="show-image-1" src="../image/Magic/c1300.jpg">
+        <input type="image" class="show-image-2" src="../image/Magic/c2300.jpg">
+        <input type="image" class="show-image-3" src="../image/Magic/c3300.jpg">
+        <input type="image" class="show-image-4" src="../image/Magic/c4300.jpg">
+        <input type="image" class="show-image-5" src="../image/Magic/c5300.jpg">
+        <input type="image" class="show-image-6" src="../image/Magic/c6300.jpg"> -->
     </div>
 </div>
 </template>
@@ -29,37 +31,48 @@ export default {
     created(){
         window.addEventListener("DOMContentLoaded", function () {
 
-	var cube = document.querySelector(".cube"),
-	    imageButtons = document.querySelector(".image-buttons");
-	var cubeImageClass = cube.classList[1];
+        var cube = document.querySelector(".cube"),
+            imageButtons = document.querySelector(".image-buttons");
+        var cubeImageClass = cube.classList[1];
 
-	//Add click event listener to image buttons container
-	imageButtons.addEventListener("click", function (e) {
+        //Add click event listener to image buttons container
+        imageButtons.addEventListener("click", function (e) {
 
-		//Get node type and class value of clicked element
-		var targetNode = e.target.nodeName,
-		    targetClass = e.target.className;
+            //Get node type and class value of clicked element
+            var targetNode = e.target.nodeName,
+                targetClass = e.target.className;
 
-		//Check if image input has been clicked and isn't the currently shown image
-		if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
+            //Check if image input has been clicked and isn't the currently shown image
+            if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
 
-			console.log("Show Image: " + targetClass.charAt(11));
+                console.log("Show Image: " + targetClass.charAt(11));
 
-			//Replace previous cube image class with new class
-			cube.classList.replace(cubeImageClass, targetClass);
+                //Replace previous cube image class with new class
+                cube.classList.replace(cubeImageClass, targetClass);
 
-			//Update cube image class variable with new class
-			cubeImageClass = targetClass;
-		}
-	});
-});
+                //Update cube image class variable with new class
+                cubeImageClass = targetClass;
+            }
+        });
+    });
+    },
+    data(){
+        return{
+            // 不知道为何使用 input type="image" 的图片无法引用所以使用require引用，成功
+            pic:[
+                {src:require("../image/Magic/p1100.jpg")},
+                {src:require("../image/Magic/p2100.jpg")},
+                {src:require("../image/Magic/p3100.jpg")},
+                {src:require("../image/Magic/p4100.jpg")},
+                {src:require("../image/Magic/p5100.jpg")},
+                {src:require("../image/Magic/p6100.jpg")},
+            ],
+        }
     }
 }
 </script>
 
 <style>
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
 :root {
 	/* Base font size */
 	font-size: 10px;
@@ -189,145 +202,4 @@ h2 {
 .cube.show-image-6 {
 	transform: translateZ(-15rem) rotateX(90deg);
 }
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video
-{
-    font: inherit;
-    font-size: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    vertical-align: baseline;;
-
-    border: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section
-{
-    display: block;
-}
-
-body
-{
-    line-height: 1;
-}
-
-ol,
-ul
-{
-    list-style: none;
-}
-
-blockquote,
-q
-{
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after
-{
-    content: '';
-    content: none;
-}
-
-table
-{
-    border-spacing: 0;;
-    border-collapse: collapse;
-}
-
 </style>
