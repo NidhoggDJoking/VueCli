@@ -136,7 +136,7 @@ body {
 
 .cube-container {
 	position: relative;
-	width: 20rem;
+	width: 19rem;
     height: 21rem;
     margin: 1rem auto 5rem;
 	perspective: 100rem;

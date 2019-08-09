@@ -54,12 +54,14 @@ export default {
   beforeRouteLeave (to, from, next) {
     // 导航离开该组件的对应路由时调用
     // 可以访问组件实例 `this`
-    const answer = window.confirm('路由离开')
-    if (answer) {
-      next()
-    } else {
-      next(false)
-    }
+    // const answer = window.confirm('路由离开')
+    // if (answer) {
+    //   next()
+    // } else {
+    //   next(false)
+    // }
+    console.log('路由离开');
+    next()
   }
 };
 </script>

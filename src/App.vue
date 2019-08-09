@@ -5,7 +5,7 @@
         <li>
           <!-- <router-link to="/"> -->
           <a @click="goto('/')" :class="'/' === $route.path ? 'active' : ''">
-          <i class="iconfont iconxiaoxi r"></i>
+          <i class="iconfont iconshouye r"></i>
             <span class="r">首页</span>
           </a>
           <!-- </router-link> -->
@@ -13,13 +13,13 @@
         
         <li>
           <a @click="goto('/about')" :class="'/about' === $route.path ? 'active' : ''">
-          <i class="iconfont iconcart g"></i>
+          <i class="iconfont iconshuju g"></i>
             <span class="g">数据</span>
           </a>
         </li>
         <li>
           <a @click="goto('/info')" :class="'/info' === $route.path ? 'active' : ''">
-            <i class="iconfont iconaixin p"></i>
+            <i class="iconfont iconditudangqianweizhi p"></i>
             <span class="p">地图</span>
           </a>
         </li>
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('http://at.alicdn.com/t/font_1308522_boen6vkpqpd.css');
+@import url('http://at.alicdn.com/t/font_1308522_59nnsdmn8g9.css');
 /* @import url('//at.alicdn.com/t/font_1308522_ghqupjiamxr.css'); */
 /* 上面的写法打完包后报错(GET file://at.alicdn.com/t/font_1308522_ghqupjiamxr.css net::ERR_FILE_NOT_FOUND) */
   *{
