@@ -5,8 +5,14 @@
 <script>
 // const canvas = document.querySelector("canvas");
 // const ctx = canvas.getContext("2d");
+let canvas;
+let ctx;
 export default {
+    // canvas,
+    // ctx,
     mounted(){
+        canvas = document.querySelector("canvas");
+        ctx= canvas.getContext("2d");
         this.start()
     },
      data(){
@@ -17,18 +23,18 @@ export default {
     methods:{
        tree(){
            this.start()
-       },
+       },   
        async start(){
             if (this.running === true) return;
             const w = (document.querySelector("canvas").width = document.querySelector("canvas").offsetWidth * 2);
                 const h = (document.querySelector("canvas").height = document.querySelector("canvas").offsetHeight * 2);
-                document.querySelector("canvas").getContext("2d").fillStyle = "#738073"; //设置背景颜色
+                ctx.fillStyle = "#738073"; //设置背景颜色
                 document.querySelector("canvas").getContext("2d").fillRect(0, 0, w, h); //绘制“被填充”的矩形
                     for (let i = 0; i < 50; i++) {
                 document.querySelector("canvas").getContext("2d").save();
-                document.querySelector("canvas").getContext("2d").translate(w * 0.2 + Math.random() * w * 0.6, h);
+                canvas.getContext("2d").translate(w * 0.2 + Math.random() * w * 0.6, h);
                 document.querySelector("canvas").getContext("2d").scale(-20 - i * 0.5, -20 - i * 0.5);
-                document.querySelector("canvas").getContext("2d").fillStyle = `hsl(0, 0%, ${100 - i * 2}%)`;
+                canvas.getContext("2d").fillStyle = `hsl(0, 0%, ${100 - i * 2}%)`;
                 this.branch(0);
                 document.querySelector("canvas").getContext("2d").restore();
                 await this.requestAnimationFrame();
@@ -38,9 +44,9 @@ export default {
         branch(l){
             if (l > 8) return;
             document.querySelector("canvas").getContext("2d").save();
-            document.querySelector("canvas").getContext("2d").scale(1 - l * 0.1, 0.5);
+            ctx.scale(1 - l * 0.1, 0.5);
             document.querySelector("canvas").getContext("2d").fillRect(-0.5, -0.5, 1, 1);
-            document.querySelector("canvas").getContext("2d").restore();
+            canvas.getContext("2d").restore();
             if (Math.random() * 1.04 < 0.04) {
                 document.querySelector("canvas").getContext("2d").save();
                 document.querySelector("canvas").getContext("2d").translate(-0.1, 0);
