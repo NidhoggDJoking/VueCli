@@ -1,5 +1,5 @@
 <template>
-     <div class='selector spring' @click="clickRing()">
+     <div class='selector spring' @click="clickRing()" id="">
   <ul>
       <li 
         v-for="(item,index) in data"
@@ -91,6 +91,7 @@ export default {
 .selector.spring button{
     font-size: 35px;
     background: rgb(63, 220, 228);
+    box-shadow: 0px 0px 12px 2px #ababab;
 }
 .selector {
   transition: all 0.5s;

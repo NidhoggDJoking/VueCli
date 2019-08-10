@@ -2,7 +2,7 @@
     <div class="top" :style="{'background-image':'url(' + imgurl + ')'}" :alt='alt'>
         <div class="info">
             <div class="user-avatar">
-                <img :src="detection(src)">
+                <img :src="detection(src)" :class="this.rotation  ? 'rotation' : ''" @click="Rotation()">
             </div>
             <div class="user-name"><span>{{name}}</span></div>
         </div>
@@ -21,6 +21,7 @@ export default {
             imgurl:require('../image/BackgroundWall/1.gif'),
             test:'测试数据',
             alt:'',
+            rotation:false,
     }
   },
   props:{
@@ -46,6 +47,13 @@ export default {
         },
         fatherUse(text='父组件使用子组件方法'){
             console.log(text)
+        },
+        Rotation(){
+            if(this.rotation){
+                this.rotation=false
+            }else{
+                this.rotation=true
+            }
         }
     },
     computed: {
@@ -57,6 +65,9 @@ export default {
 </script>
 
 <style>
+.rotation{
+    transform: rotate(360deg);
+}
 .top{ 
     background-color:#ED5564;
     /* background-image: url(../image/BackgroundWall/2.gif); */
@@ -89,6 +100,7 @@ export default {
     width: 100%;
     height: 100%;
     border-radius: 100%;
+    transition: 1s all cubic-bezier(0.13, 0.1, 0.51, 0.99);
 }
 .user-avatar:active{
     box-shadow: 0px 0px 12px 5px #7d7d7d;
