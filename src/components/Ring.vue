@@ -92,6 +92,13 @@ export default {
     font-size: 35px;
     background: rgb(63, 220, 228);
     box-shadow: 0px 0px 12px 2px #ababab;
+    /* box-shadow: 0 3px 4px rgba(0,0,0,1),
+    inset 0 -2px 5px rgba(0,0,0,1), 
+    inset 0 2px 2px rgba(255,255,255,0.5),
+    0 0 0 2px #000,
+    0 0 0 5px #0c0c0c,
+    0 0 0 6px #080808; */
+
 }
 .selector {
   transition: all 0.5s;
