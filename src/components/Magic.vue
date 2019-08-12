@@ -12,7 +12,7 @@
             <img class="cube-face-image image-6" src="../image/Magic/Inori6.jpg">
         </div>
     </div>
-    
+
     <!-- <h2>点击下面的图像旋转立方体</h2> -->
     <div class="image-buttons">
         <input v-for="(item,index) in pic" :key="index" type="image" :class="'show-image-'+(index+1)" :src='item.src'>
@@ -46,7 +46,7 @@ export default {
             //Check if image input has been clicked and isn't the currently shown image
             if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
 
-                console.log("Show Image: " + targetClass.charAt(11));
+                // console.log("Show Image: " + targetClass.charAt(11));
 
                 //Replace previous cube image class with new class
                 cube.classList.replace(cubeImageClass, targetClass);
