@@ -2,16 +2,20 @@
   <div class="about">
     <Map></Map>
     <MItem :member="member" @rou="goto"></MItem>
+    <Loading v-if="loading"></Loading>
   </div>
 </template>
 <script>
 
 import MItem from '@/components/MemberItem.vue';
+import Loading from '@/components/Loading.vue';
 import Map from '@/components/BaiduMap.vue';
 import Js from '@/js/base.js';
+
 export default {
   name: 'info',
   components: {
+     Loading,
      MItem,
      Map,
   },
@@ -22,7 +26,8 @@ export default {
         {icon:"iconCategory",text:"List",path:"list"},
         {icon:"iconerweima",text:"Qrcode",path:"qr"},
         {icon:"iconViewGallery",text:"Magic",path:"magic"},
-        ]
+        ],
+        loading:true,
     }
   },
     // 1.this.$router.push()
@@ -33,6 +38,7 @@ export default {
     // 相对于当前页面向前或向后跳转多少个页面,类似 window.history.go(n)。n可为正数可为负数。正数返回上一个页面
    methods: {
     goto(pathName,text='') {
+      
       console.log('点击成功!');
       console.log('路由的值' + pathName);
       // this.$router.replace(path);
@@ -50,6 +56,12 @@ export default {
     // this.$router.replace();
     Js('局部导入');
     this.Js('全局导入')
+  },
+  mounted(){
+    var that = this;
+    setTimeout(function(){
+      that.loading = false
+    },3000)
   }
 }
 </script>

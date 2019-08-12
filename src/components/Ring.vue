@@ -20,6 +20,13 @@
 <script>
 import jquery from 'jquery';
 export default {
+  created() {
+        //用于单页vue启动的适应问题
+        var oMeta = document.createElement('meta');
+        oMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=0';
+        oMeta.name = 'viewport';
+        document.getElementsByTagName('head')[0].appendChild(oMeta);
+    },
     mounted(){
         // let that = this;
         // setTimeout(function() { that.toggleOptions('.selector'); }, 150);
