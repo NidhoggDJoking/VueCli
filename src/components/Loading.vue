@@ -20,10 +20,16 @@ export default {
 <style scoped>
 
 div {
-    height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    bottom: 25px;
+    height: 60%;
+    align-items: center;
+    text-align: center;
+    display: block;
+    /*display: flex;
+    justify-content: center; */
 }
 
 .loader {
