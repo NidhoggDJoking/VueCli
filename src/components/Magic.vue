@@ -4,14 +4,15 @@
     </div>
     <div class="cube-container">
         <div class="cube initial-position">
-            <img class="cube-face-image image-1" src="../image/Magic/c1300.jpg">
-            <img class="cube-face-image image-2" src="../image/Magic/c2300.jpg">
-            <img class="cube-face-image image-3" src="../image/Magic/c3300.jpg">
-            <img class="cube-face-image image-4" src="../image/Magic/c4300.jpg">
-            <img class="cube-face-image image-5" src="../image/Magic/c5300.jpg">
-            <img class="cube-face-image image-6" src="../image/Magic/c6300.jpg">
+            <img class="cube-face-image image-1" src="../image/Magic/Inori1.jpg">
+            <img class="cube-face-image image-2" src="../image/Magic/Inori2.jpg">
+            <img class="cube-face-image image-3" src="../image/Magic/Inori3.jpg">
+            <img class="cube-face-image image-4" src="../image/Magic/Inori4.jpg">
+            <img class="cube-face-image image-5" src="../image/Magic/Inori5.jpg">
+            <img class="cube-face-image image-6" src="../image/Magic/Inori6.jpg">
         </div>
     </div>
+    
     <!-- <h2>点击下面的图像旋转立方体</h2> -->
     <div class="image-buttons">
         <input v-for="(item,index) in pic" :key="index" type="image" :class="'show-image-'+(index+1)" :src='item.src'>
@@ -62,12 +63,12 @@ export default {
         return{
             // 不知道为何使用 input type="image" 的图片无法引用所以使用require引用，成功
             pic:[
-                {src:require("../image/Magic/p1100.jpg")},
-                {src:require("../image/Magic/p2100.jpg")},
-                {src:require("../image/Magic/p3100.jpg")},
-                {src:require("../image/Magic/p4100.jpg")},
-                {src:require("../image/Magic/p5100.jpg")},
-                {src:require("../image/Magic/p6100.jpg")},
+                {src:require("../image/Magic/yuzuriha1.jpg")},
+                {src:require("../image/Magic/yuzuriha2.jpg")},
+                {src:require("../image/Magic/yuzuriha3.jpg")},
+                {src:require("../image/Magic/yuzuriha4.jpg")},
+                {src:require("../image/Magic/yuzuriha5.jpg")},
+                {src:require("../image/Magic/yuzuriha6.jpg")},
             ],
         }
     },
