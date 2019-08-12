@@ -33,35 +33,29 @@ div {
 }
 
 .loader {
-  -webkit-animation: loader-turn 1s linear infinite;
-          animation: loader-turn 1s linear infinite;
+  animation: loader-turn 1s linear infinite;
   padding: 1rem;
   max-width: 60px;
   width: 100%;
 }
 @-webkit-keyframes loader-turn {
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+      transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+      transform: rotate(720deg);
   }
 }
 @keyframes loader-turn {
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+      transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+      transform: rotate(720deg);
   }
 }
 .loader__value {
-  -webkit-animation: loader-stroke 6s linear infinite;
-          animation: loader-stroke 6s linear infinite;
+  animation: loader-stroke 6s linear infinite;
   fill: none;
   stroke-dasharray: 63;
   stroke-dashoffset: 63;
@@ -73,28 +67,23 @@ div {
 }
 .loader__value:nth-child(2) {
   stroke: mediumspringgreen;
-  -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .loader__value:nth-child(3) {
   stroke: crimson;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 .loader__value:nth-child(4) {
   stroke: peachpuff;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 .loader__value:nth-child(5) {
   stroke: chocolate;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 .loader__value:nth-child(6) {
   stroke: pink;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 @-webkit-keyframes loader-stroke {
   8.3333333333% {

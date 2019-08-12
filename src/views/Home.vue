@@ -2,18 +2,21 @@
   <div class="home">
     <Swiper :banner="banner"/>
     <NavItem></NavItem>
+    <Card></Card>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Swiper from '@/components/Swiper.vue';
+import Card from '@/components/Card.vue';
 import NavItem from '@/components/NavItem.vue';
 export default {
   name: 'home',
   components: {
     Swiper,
     NavItem,
+    Card
   },
   data(){
     return{

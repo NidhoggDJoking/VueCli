@@ -107,17 +107,6 @@ export default {
 </script>
 
 <style>
-:root {
-	/* Base font size */
-	/* font-size: 10px; */
-	/* Border color variable */
-	--border-color: #e70;
-}
-
-/* * {
-	box-sizing: border-box;
-}
-*/
 body {
 	/* font-family: "Montserrat", Arial, sans-serif;
 	font-weight: 500;
@@ -155,9 +144,7 @@ body {
 	position: absolute;
 	/* opacity: 0.95; */
 	/* border: 0.2rem solid #fafafa; */
-	box-shadow: 0 0 0.5rem #fff, 
-				0 0 1.5rem var(--border-color),
-				0 0 3rem var(--border-color);
+	box-shadow: 0 0 0.5rem #fff, 0 0 1.5rem #ff42e8, 0 0 3rem #fff;
 }
 
 .image-buttons {
