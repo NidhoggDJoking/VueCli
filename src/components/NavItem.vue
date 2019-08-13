@@ -115,10 +115,10 @@ span {
     background: url(../image/Icon/icon-facebook.png);
 }
 .icon3{
-    background: url(../image/Icon/icon-linkedin.png);
+    background: url(../image/Icon/icon-music.png);
 }
 .icon4{
-    background: url(../image/Icon/icon-music.png);
+    background: url(../image/Icon/icon-linkedin.png);
 }
 .icon5{
     background: url(../image/Icon/icon-youtube.png);
