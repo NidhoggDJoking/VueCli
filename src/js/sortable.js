@@ -1,3 +1,4 @@
+"use strict";
 export function _toConsumableArray(t) { 
     if (Array.isArray(t)) { for (var e = 0, n = Array(t.length); e < t.length; e++) n[e] = t[e]; return n } return Array.from(t) 
 }
@@ -9,6 +10,7 @@ export function _classCallCheck(t, e) {
 export var _extends = Object.assign || function(t) { for (var e = 1; e < arguments.length; e++) { var n = arguments[e]; for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i]) } return t },
 _createClass = function() {
     function i(t, e) {
+        console.log("至少到了");
         for (var n = 0; n < e.length; n++) {
             var i = e[n];
             i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(t, i.key, i)
@@ -18,6 +20,7 @@ _createClass = function() {
 }();
 
 export var Sortable = function() {
+    console.log("至少来过");
     function d() {
         var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {},
             e = t.parent,
@@ -118,3 +121,4 @@ export var Sortable = function() {
     }
 }]), d
 }();
+// HTMLElement.prototype.sortablejs = HTMLElement.prototype.sortablejs || function(t) { return new Sortable(_extends({ parent: this }, t)) };

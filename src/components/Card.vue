@@ -133,12 +133,18 @@
 
 <script>
 import {Sortable,_extends,_toConsumableArray,_classCallCheck} from '../js/sortable.js';
+import { setTimeout } from 'timers';
 export default {
+	created(){
+		// require('../js/sortable.js')  也行
+		HTMLElement.prototype.sortablejs = HTMLElement.prototype.sortablejs || function(t) { return new Sortable(_extends({ parent: this }, t)) };
+	},
     mounted(){
-        HTMLElement.prototype.sortablejs = HTMLElement.prototype.sortablejs || function(t) { return new Sortable(_extends({ parent: this }, t)) };
-        document.querySelector('#sortable').sortablejs();
-        console.log(document.querySelector('#sortable'))
-    }
+		document.querySelector('#sortable').sortablejs();
+	},
+	destroyed(){
+		// document.querySelector('#sortable').reset()
+	}
 }
 </script>
 
