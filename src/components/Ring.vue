@@ -111,8 +111,8 @@ export default {
   transition: all 0.5s;
   position: absolute;
   left: 50%;
-  /* top: 50%; */
-  top:60%;
+  /* right: -5%; */
+  top:63%;
   width: 140px;
   height: 140px;
   margin-top: -70px;

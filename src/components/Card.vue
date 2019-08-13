@@ -1,8 +1,6 @@
 <template>
-<div>
-    <div style="text-align:center;clear:both;">
-
-</div>
+<div style="margin-bottom: 2.4rem;">
+    <div style="text-align:center;clear:both;"></div>
 
 <main class="sortable">
 <div class="container">
@@ -10,22 +8,22 @@
 	<ul class="sortable__nav nav">
 	  <li>
 		<a data-sjslink="all" class="nav__link">
-		  所有
+		  天空龙
 		</a>
 	  </li>
 	  <li>
 		<a data-sjslink="flatty" class="nav__link">
-		  扁平化
+		  拉的翼神
 		</a>
 	  </li>
 	  <li>
 		<a data-sjslink="funny" class="nav__link">
-		  创意
+		  巨神兵
 		</a>
 	  </li>
 	</ul>
 	<div id="sortable" class="sjs-default">
-	  <div data-sjsel="flatty">
+	  <div data-sjsel="funny">
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-1.jpg" alt="">
 		  <div class="card-infos">
@@ -47,7 +45,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div data-sjsel="funny">
+	  <div data-sjsel="flatty">
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-3.jpg" alt="">
 		  <div class="card-infos">
@@ -149,19 +147,6 @@ export default {
 </script>
 
 <style scoped>
-body{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
-  font: normal 300 1.4em / 1.2 'Open-sans', helvetica, sans-serif;
-  color: #111;
-}
-a{
-  text-decoration: none;
-  color: #111;
-  cursor: pointer;
-}
 ol,
 ul{
   list-style: none;
