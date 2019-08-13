@@ -134,7 +134,7 @@ import {Sortable,_extends,_toConsumableArray,_classCallCheck} from '../js/sortab
 import { setTimeout } from 'timers';
 export default {
 	created(){
-		// require('../js/sortable.js')  也行
+		// require('../js/sortable.js')  也行!成功!
 		HTMLElement.prototype.sortablejs = HTMLElement.prototype.sortablejs || function(t) { return new Sortable(_extends({ parent: this }, t)) };
 	},
     mounted(){
