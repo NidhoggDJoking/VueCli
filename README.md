@@ -1,15 +1,4 @@
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/vuepress-0.14.2-brightgreen.svg" alt="Vuepress">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/npm/l/vuepress.svg" alt="License"></a>
-  <a href="#">
-    <img src="https://travis-ci.org/Neveryu/web-bookmarks.svg?branch=master" alt="Build"></a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/%24-donate-ff69b4.svg" alt="donate">
-  </a>
-</p>
+
 
 # VueCli - Demo
 
