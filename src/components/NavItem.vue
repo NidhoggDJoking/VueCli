@@ -1,23 +1,23 @@
 <template>
     <div class="nav">
         <div class="card">
-            <div class="item"></div>
+            <div class="item icon icon1"></div>
             <span>东邪</span>
         </div>
         <div class="card">
-            <div class="item"></div>
+            <div class="item icon icon2"></div>
             <span>西毒</span>
         </div>
         <div class="card">
-            <div class="item"></div>
+            <div class="item icon icon3"></div>
             <span>中通</span>
         </div>
         <div class="card">
-            <div class="item"></div>
+            <div class="item icon icon4"></div>
             <span>南帝</span>
         </div>
         <div class="card">
-            <div class="item"></div>
+            <div class="item icon icon5"></div>
             <span>北丐</span>
         </div>
     </div>
@@ -53,7 +53,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 6px 1px #cdcdcd;
+    box-shadow: 0 0 5px 0px #a7a7a7;
 }
 
 .card {
@@ -107,5 +107,23 @@ span {
     90% {
         background-color: #ED5564;
     }
+}
+.icon1{
+    background: url(../image/Icon/icon-camera.png);
+}
+.icon2{
+    background: url(../image/Icon/icon-facebook.png);
+}
+.icon3{
+    background: url(../image/Icon/icon-linkedin.png);
+}
+.icon4{
+    background: url(../image/Icon/icon-music.png);
+}
+.icon5{
+    background: url(../image/Icon/icon-youtube.png);
+}
+.icon{
+    background-size: 50px 50px;
 }
 </style>

@@ -29,7 +29,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-1.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 1</h2>
+			<h2 class="card__title">模块 1</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, eius, asperiores. Incidunt sapiente est quae iure...
 			</p>
@@ -40,7 +40,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-2.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 2</h2>
+			<h2 class="card__title">模块 2</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae necessitatibus, dolorem similique vero explicabo...
 			</p>
@@ -51,7 +51,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-3.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 3</h2>
+			<h2 class="card__title">模块 3</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, placeat voluptate, fuga tenetur eos ducimus animi porro...
 			</p>
@@ -62,7 +62,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-4.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 4</h2>
+			<h2 class="card__title">模块 4</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit doloremque quisquam, obcaecati unde nam est quos...
 			</p>
@@ -73,7 +73,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-5.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 5</h2>
+			<h2 class="card__title">模块 5</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis hic minima nisi reprehenderit...
 			</p>
@@ -84,7 +84,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-6.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 6</h2>
+			<h2 class="card__title">模块 6</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatibus, id, deserunt inventore...
 			</p>
@@ -95,7 +95,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-7.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 7</h2>
+			<h2 class="card__title">模块 7</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni sunt dolores nam...
 			</p>
@@ -106,7 +106,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-8.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 8</h2>
+			<h2 class="card__title">模块 8</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam, blanditiis necessitatibus...
 			</p>
@@ -117,7 +117,7 @@
 		<div class="card">
 		  <img class="card__picture" src="../image/Card/item-9.jpg" alt="">
 		  <div class="card-infos">
-			<h2 class="card__title">Example 9</h2>
+			<h2 class="card__title">模块 9</h2>
 			<p class="card__text">
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci voluptatum laborum officiis...
 			</p>
