@@ -37,10 +37,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top-left-radius: 20px;
+    /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
-    top: 13rem;
+    top: 13rem; */
     z-index: 1;
 }
 

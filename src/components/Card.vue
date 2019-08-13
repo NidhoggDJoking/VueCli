@@ -135,7 +135,6 @@
 import {Sortable,_extends,_toConsumableArray,_classCallCheck} from '../js/sortable.js';
 export default {
     mounted(){
-        console.log("777")
         HTMLElement.prototype.sortablejs = HTMLElement.prototype.sortablejs || function(t) { return new Sortable(_extends({ parent: this }, t)) };
         document.querySelector('#sortable').sortablejs();
         console.log(document.querySelector('#sortable'))
@@ -194,7 +193,7 @@ hr{
   padding: 0 10px;
 }
 .wrapper{
-  padding: 75px 0;
+  padding: 20px 0;
 }
 .card{
   background: #fff;

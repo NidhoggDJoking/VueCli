@@ -11,6 +11,10 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+      meta: {
+        keepAlive: false, 
+        //此组件需要被缓存
+      },
     },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
