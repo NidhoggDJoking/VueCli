@@ -22,7 +22,7 @@
 
 # Vue Practice
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
