@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="#">
+  <a href="https://cn.vuejs.org/">
     <img src="https://img.shields.io/badge/Vue-2.6.10-green">
   </a>
   <a href="#">
