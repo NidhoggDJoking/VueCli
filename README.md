@@ -50,3 +50,8 @@ npm run lint
 ## Development
 
 > Please make sure your version of Node.js is greater than 8.
+
+
+## License
+
+[MIT](https://github.com/NidhoggDJoking/VueCli/blob/master/LICENSE)
