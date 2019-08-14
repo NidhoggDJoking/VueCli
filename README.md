@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://neveryu.github.io/web-bookmarks/" target="_blank">
-    <img width="280" src="https://raw.githubusercontent.com/Neveryu/web-bookmarks/master/docs/.vuepress/public/cute-spear-monster.jpg" alt="logo">
+  <a href="#" target="_blank">
+    <img width="280" src="https://avatars0.githubusercontent.com/u/38490462?s=460&v=4" alt="logo">
   </a>
 </p>
 
@@ -18,19 +18,17 @@
   </a>
 </p>
 
-# VueCli - Demo
-
-## Project setup 初始化
+## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development 运行
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production 打包
+### Compiles and minifies for production
 ```
 npm run build
 ```
