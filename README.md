@@ -45,3 +45,7 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
+
+## Development
+
+> Please make sure your version of Node.js is greater than 8.
