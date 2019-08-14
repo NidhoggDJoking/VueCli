@@ -51,7 +51,11 @@ npm run lint
 
 > Please make sure your version of Node.js is greater than 8.
 
+``` bash
+node -v
+```
+
 
 ## License
 
-[MIT](https://github.com/NidhoggDJoking/VueCli/blob/master/LICENSE)
+[Apache](https://github.com/NidhoggDJoking/VueCli/blob/master/LICENSE)
