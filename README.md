@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/NidhoggDJoking" target="_blank">
-    <img width="250" src="https://avatars0.githubusercontent.com/u/38490462?s=460&v=4" alt="logo">
+    <img width="180" src="https://github.com/NidhoggDJoking/VueCli/blob/master/src/image/Logo/ReLogo.png" alt="logo">
   </a>
 </p>
 
