@@ -21,11 +21,12 @@
 
 <h1 align="center">VuePractice</h1>
 
-      This is my first contact with Vue project，I will write all the problems and plug-ins that   
+   This is my first contact with Vue project，I will write all the problems and plug-ins that   
 I will encounter in the future in this project. Convenient for future review.
 
    
-      
+  
+  
       
 #### Project setup
 ```
