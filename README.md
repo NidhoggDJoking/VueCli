@@ -19,30 +19,29 @@
 </p>
 
 
+<h1 align="center">VuePractice</h1>
 
-# Vue Practice
-
-### Project setup
+#### Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your tests
+#### Run your tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+#### Lints and fixes files
 ```
 npm run lint
 ```
@@ -54,6 +53,23 @@ npm run lint
 ``` bash
 node -v
 ```
+
+### Dependencies
+
+| Project  |  Version | Description  |
+| :-------- | --------:| :--: |
+| axios  | <img src="https://img.shields.io/badge/npm-0.19-green"> |  Make data requests |
+| core-js    | <img src="https://img.shields.io/badge/npm-2.6.5-green">   | Provide ES6,ES7  |
+| jquery  | <img src="https://img.shields.io/badge/npm-3.4.1-green"> | Increase of efficiency |  
+| qrcode |   <img src="https://img.shields.io/badge/npm-1.4.1-green"> | Two-Dimensional Code Generation | 
+| vuex  |  <img src="https://img.shields.io/badge/npm-3.0.1-green"> | Common data between components | 
+| vue-city |   <img src="https://img.shields.io/badge/npm-2.0.0-green"> | Acquisition of City Names | 
+| vue-route |   <img src="https://img.shields.io/badge/npm-3.0.3-green"> | Routing parsing | 
+| vue-chartjs |  <img src="https://img.shields.io/badge/npm-3.4.2-green"> | Chart Generation Tool | 
+| vue-resource   |   <img src="https://img.shields.io/badge/npm-1.5.1-green"> | Make data requests | 
+| vue-wechat-title   | <img src="https://img.shields.io/badge/npm-2.0.5-green"> | Title tag compatible with IOS system | 
+| vue-awesome-swiper  |  <img src="https://img.shields.io/badge/npm-3.1.3-green"> | A Carousel Graph Plug-in | 
+| vue-baidu-map | <img src="https://img.shields.io/badge/npm-0.21.2-green"> | Map Plug-in | 
 
 ## License
 
