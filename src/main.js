@@ -12,32 +12,32 @@ Vue.use(require('vue-wechat-title'));
 Vue.use(VueResourse);
 Vue.config.productionTip = false;
 new Vue({
-  router,
-  store,
-  render: h => h(App),
+    router,
+    store,
+    render: h => h(App),
 }).$mount('#app');
 
-  // main.js;
-  // 页面跳转的拦截器;
-  // to:router即将进入的路由对象;
-  // from:当前导航即将离开的路由;
-  // next:Function,进行管道中的一个钩子，如果执行完了，则导航的状态就是 confirmed （确认的）；否则为false，终止导航。
+// main.js;
+// 页面跳转的拦截器;
+// to:router即将进入的路由对象;
+// from:当前导航即将离开的路由;
+// next:Function,进行管道中的一个钩子，如果执行完了，则导航的状态就是 confirmed （确认的）；否则为false，终止导航。
 router.beforeEach((to, from, next) => {
-  // 在需要过滤的路由添加 requireAuth: true 如:info
-  if (to.matched.some(record => record.meta.requireAuth)){
-      console.log("进过拦截器了");
-      if(!sessionStorage.getItem('Nidhogg')){
-          alert("没有发现sessionStorage跳转至首页");
-          next({
-            path: '/',
-            query: {redirect: to.fullPath} // 将跳转的路由path作为参数，登录成功后跳转到该路由
-        })
-      }
-  }
-  next()
+    // 在需要过滤的路由添加 requireAuth: true 如:info
+    if (to.matched.some(record => record.meta.requireAuth)) {
+        console.log("进过拦截器了");
+        if (!sessionStorage.getItem('Nidhogg')) {
+            alert("没有发现sessionStorage跳转至首页");
+            next({
+                path: '/',
+                query: { redirect: to.fullPath } // 将跳转的路由path作为参数，登录成功后跳转到该路由
+            })
+        }
+    }
+    next()
 });
 
 // 跳转后执行
 router.afterEach((to, from) => {
-  
+
 })
