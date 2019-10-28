@@ -31,6 +31,13 @@ export default {
     }
   }
 };
+// 或者在.vue文件中单独引入注册
+// import {calendar,inlineCalendar} from 'vue-mobile-calendar';
+// export default {
+//   components: {
+//     calendar,
+//   },
+// };
 </script>
 <style scoped>
 .btn {
