@@ -19,6 +19,7 @@
     "vue-baidu-map": "^0.21.22",
     "vue-chartjs": "^3.4.2",
     "vue-city": "^2.0.0",
+    "vue-mobile-calendar": "^3.3.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.3",
     "vue-wechat-title": "^2.0.5",
