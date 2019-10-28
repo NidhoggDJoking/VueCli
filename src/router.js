@@ -85,5 +85,11 @@ export default new Router({
             component: () =>
                 import ('./components/Calendar.vue'),
         },
+        {
+            path: '/mobileCalendar',
+            name: 'mobileCalendar',
+            component: () =>
+                import ('./components/MobileCalendar.vue'),
+        },
     ],
 });
