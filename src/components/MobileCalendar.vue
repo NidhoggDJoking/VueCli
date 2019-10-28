@@ -28,6 +28,7 @@ export default {
     },
     onChange(date) {
       this.date = JSON.stringify(date.map(item => item.format("YYYY-MM-DD")));
+      // console.log(date[0].$y+"-"+(date[0].$m+1)+"-"+date[0].$D);
     }
   }
 };
