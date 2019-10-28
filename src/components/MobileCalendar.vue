@@ -18,7 +18,7 @@ export default {
       minDate: new Date(), //设置过期时间为当天
       show: false,
       date: "",
-      defaultDate: ["2019-07-02", "2019-07-05"]
+      defaultDate: new Date()
     };
   },
   methods: {
