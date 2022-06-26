@@ -90,12 +90,6 @@ export default new Router({
             name: 'mobileCalendar',
             component: () =>
                 import ('./components/MobileCalendar.vue'),
-        },
-        {
-            path: '/ThreeD',
-            name: 'ThreeD',
-            component: () =>
-                import ('./components/ThreeD.vue'),
-        },
+        }
     ],
 });
